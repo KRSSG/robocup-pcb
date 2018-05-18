@@ -11913,6 +11913,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 <text x="-203.2" y="113.03" size="5.08" layer="91">5V SUPPLY</text>
 <text x="-123.19" y="111.76" size="5.08" layer="91">CONNECTORS</text>
 <text x="60.96" y="97.79" size="25.4" layer="91" font="fixed">KICKER 2018</text>
+<text x="45.72" y="-71.12" size="5.08" layer="91">BUFFER</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="190.5" y="-40.64"/>
@@ -11987,7 +11988,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 <instance part="JP1" gate="A" x="-40.64" y="-15.24"/>
 <instance part="R13" gate="G$1" x="-121.92" y="99.06" rot="R90"/>
 <instance part="R14" gate="G$1" x="-121.92" y="83.82" rot="R90"/>
-<instance part="IC2" gate="G$1" x="-116.84" y="137.16" rot="R180"/>
+<instance part="IC2" gate="G$1" x="86.36" y="-88.9" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -12180,8 +12181,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="V-"/>
-<wire x1="-116.84" y1="144.78" x2="-121.92" y2="144.78" width="0.1524" layer="91"/>
-<label x="-119.38" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="-81.28" x2="81.28" y2="-81.28" width="0.1524" layer="91"/>
+<label x="83.82" y="-81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12545,8 +12546,8 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="V+"/>
-<wire x1="-116.84" y1="129.54" x2="-121.92" y2="129.54" width="0.1524" layer="91"/>
-<label x="-121.92" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="86.36" y1="-96.52" x2="81.28" y2="-96.52" width="0.1524" layer="91"/>
+<label x="81.28" y="-96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -12863,24 +12864,32 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="+IN"/>
-<wire x1="-109.22" y1="134.62" x2="-106.68" y2="134.62" width="0.1524" layer="91"/>
-<label x="-106.68" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="93.98" y1="-91.44" x2="96.52" y2="-91.44" width="0.1524" layer="91"/>
+<label x="96.52" y="-91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CAP_ADC" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="-IN"/>
-<wire x1="-109.22" y1="139.7" x2="-109.22" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="147.32" x2="-127" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="-127" y1="147.32" x2="-127" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-86.36" x2="93.98" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-78.74" x2="76.2" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-78.74" x2="76.2" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
-<wire x1="-127" y1="137.16" x2="-124.46" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="-127" y1="137.16" x2="-132.08" y2="137.16" width="0.1524" layer="91"/>
-<label x="-132.08" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="76.2" y1="-88.9" x2="78.74" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-88.9" x2="71.12" y2="-88.9" width="0.1524" layer="91"/>
+<label x="71.12" y="-88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="PC1"/>
 <wire x1="-93.98" y1="-40.64" x2="-88.9" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="43.18" y1="-63.5" x2="43.18" y2="-101.6" width="0.1524" layer="91" style="longdash"/>
+<wire x1="43.18" y1="-101.6" x2="114.3" y2="-101.6" width="0.1524" layer="91" style="longdash"/>
+<wire x1="114.3" y1="-101.6" x2="114.3" y2="-63.5" width="0.1524" layer="91" style="longdash"/>
+<wire x1="114.3" y1="-63.5" x2="43.18" y2="-63.5" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>

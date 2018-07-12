@@ -12007,14 +12007,14 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="P+10" library="stm32f4stamp" deviceset="3.3V" device=""/>
 <part name="P+11" library="stm32f4stamp" deviceset="3.3V" device=""/>
 <part name="P+12" library="stm32f4stamp" deviceset="3.3V" device=""/>
-<part name="3.3V" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="3.3V" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="GND39" library="SparkFun" deviceset="GND" device=""/>
 <part name="R15" library="resistor" deviceset="R-EU_" device="R1206" value="10k"/>
 <part name="P+13" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="R25" library="resistor" deviceset="R-EU_" device="R1206" value="1k"/>
 <part name="JP12" library="mohit" deviceset="FRC_2*5" device=""/>
-<part name="12V" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="12V" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="R7" library="resistor" deviceset="R-EU_" device="R1206" value="1k"/>
 <part name="Q1" library="crystal" deviceset="CRYSTAL" device="HC49U-V"/>
@@ -12026,9 +12026,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="U4" library="LP38690DT-3.3" deviceset="LP38690DT-3.3" device=""/>
 <part name="U2" library="LP38690DT-3.3" deviceset="LP38690DT-3.3" device=""/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R1206" value="1k"/>
-<part name="5V" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="5V" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
-<part name="BATTERY" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="BATTERY" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
 <part name="S2" library="switch" deviceset="A68-A31" device=""/>
 <part name="J1" library="RoboJackets-Connectors" deviceset="XT-60" device="BATT_LABEL"/>
@@ -12203,7 +12203,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <instance part="U$4" gate="G$1" x="322.58" y="121.92"/>
 <instance part="GND36" gate="1" x="307.34" y="116.84" rot="MR0"/>
 <instance part="GND37" gate="1" x="-71.12" y="78.74" rot="MR0"/>
-<instance part="P+1" gate="G$1" x="-66.04" y="78.74" rot="R180"/>
+<instance part="P+1" gate="G$1" x="-63.5" y="78.74" rot="R180"/>
 <instance part="R6" gate="G$1" x="-68.58" y="-154.94" rot="R90"/>
 <instance part="R1" gate="G$1" x="-20.32" y="152.4"/>
 <instance part="T1" gate="G$1" x="-12.7" y="152.4"/>
@@ -12341,10 +12341,11 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </segment>
 <segment>
 <pinref part="JP12" gate="G$1" pin="7"/>
-<wire x1="-50.8" y1="78.74" x2="-66.04" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="78.74" x2="-63.5" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="JP12" gate="G$1" pin="8"/>
 <wire x1="-50.8" y1="78.74" x2="-43.18" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
+<junction x="-63.5" y="78.74"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
@@ -12491,9 +12492,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="388.62" y1="129.54" x2="388.62" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="317.5" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="-27.94" y1="5.08" x2="-27.94" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
@@ -12629,26 +12627,26 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </net>
 <net name="MISO" class="0">
 <segment>
-<label x="299.72" y="-96.52" size="1.9304" layer="95"/>
-<pinref part="TP9" gate="G$1" pin="TP"/>
-<wire x1="332.74" y1="-96.52" x2="304.8" y2="-96.52" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$4" pin="PB4/NJTRST/SPI3_MISO/SPI1_MISO"/>
 <wire x1="213.36" y1="-142.24" x2="208.28" y2="-142.24" width="0.1524" layer="91"/>
 <label x="208.28" y="-142.24" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<label x="299.72" y="-96.52" size="1.9304" layer="95"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
+<wire x1="332.74" y1="-96.52" x2="302.26" y2="-96.52" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
-<segment>
-<label x="299.72" y="-93.98" size="1.9304" layer="95"/>
-<pinref part="TP8" gate="G$1" pin="TP"/>
-<wire x1="330.2" y1="-93.98" x2="304.8" y2="-93.98" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$4" pin="PB5/I2C1_SMBA/CAN2_RX/SPI1_MOSI/SPI3_MOSI"/>
 <wire x1="213.36" y1="-139.7" x2="208.28" y2="-139.7" width="0.1524" layer="91"/>
 <label x="208.28" y="-139.7" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<label x="299.72" y="-93.98" size="1.9304" layer="95"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+<wire x1="330.2" y1="-93.98" x2="299.72" y2="-93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CE" class="0">

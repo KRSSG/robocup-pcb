@@ -1,0 +1,2 @@
+1. proceed with the dimensions obtained from gerber data.
+2. Solved all the clearance problemss

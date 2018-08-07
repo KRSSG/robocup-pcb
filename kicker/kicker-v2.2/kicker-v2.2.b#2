@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
+<<<<<<< HEAD
 <eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+=======
+<eagle version="9.0.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+>>>>>>> 83b45455d401a244b162589eb7e7bebc7c28ddf7
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -164,11 +171,14 @@
 <wire x1="-79.25" y1="-26.75" x2="-79.1" y2="28" width="0.4064" layer="20" curve="-36.786625"/>
 <wire x1="69.25" y1="28.05" x2="-79.1" y2="28.1" width="0.4064" layer="20"/>
 <text x="2.35" y="-6.15" size="6.4516" layer="21" ratio="14" rot="R90">KRSSG</text>
+<<<<<<< HEAD
 <circle x="-79.1" y="28.1" radius="2" width="0.1524" layer="113"/>
 <circle x="-79.1" y="28.1" radius="2" width="0.01" layer="113"/>
 <wire x1="-79.25" y1="-26.75" x2="69.25" y2="-26.8" width="0.01" layer="113"/>
 <wire x1="69.25" y1="-26.8" x2="69.25" y2="28.05" width="0.01" layer="113"/>
 <wire x1="69.25" y1="28.05" x2="-79.1" y2="28.1" width="0.01" layer="113"/>
+=======
+>>>>>>> 83b45455d401a244b162589eb7e7bebc7c28ddf7
 </plain>
 <libraries>
 <library name="LT3750-element">

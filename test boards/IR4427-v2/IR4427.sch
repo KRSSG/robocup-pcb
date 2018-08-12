@@ -3611,6 +3611,15 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="LED18V" library="audio amplifier example" library_urn="urn:adsk.eagle:library:970892" deviceset="LED" device="CHIPLED_1206" package3d_urn="urn:adsk.eagle:package:970934/2"/>
 <part name="R13" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="1k"/>
 <part name="R14" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="R" device="R1206" package3d_urn="urn:adsk.eagle:package:13301/1" value="330"/>
+<part name="CL3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u"/>
+<part name="CS3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u"/>
+<part name="GND1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="CL4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u"/>
+<part name="CS4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u"/>
+<part name="GND2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="CL5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u"/>
+<part name="CS5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u"/>
+<part name="GND8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3652,6 +3661,15 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <instance part="LED18V" gate="G$1" x="279.4" y="53.34"/>
 <instance part="R13" gate="G$1" x="269.24" y="58.42"/>
 <instance part="R14" gate="G$1" x="281.94" y="63.5"/>
+<instance part="CL3" gate="G$1" x="156.73" y="-17.12"/>
+<instance part="CS3" gate="G$1" x="171.97" y="-17.12"/>
+<instance part="GND1" gate="GND" x="164.35" y="-27.28"/>
+<instance part="CL4" gate="G$1" x="188.03" y="-16.88"/>
+<instance part="CS4" gate="G$1" x="203.27" y="-16.88"/>
+<instance part="GND2" gate="GND" x="195.65" y="-27.04"/>
+<instance part="CL5" gate="G$1" x="219.53" y="-15.84"/>
+<instance part="CS5" gate="G$1" x="234.77" y="-15.84"/>
+<instance part="GND8" gate="GND" x="227.15" y="-26"/>
 </instances>
 <busses>
 </busses>
@@ -3733,6 +3751,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="115.55" y1="52.81" x2="113.01" y2="52.81" width="0.1524" layer="91"/>
 <label x="102.85" y="52.81" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CL3" gate="G$1" pin="1"/>
+<wire x1="156.73" y1="-14.58" x2="156.73" y2="-12.04" width="0.1524" layer="91"/>
+<label x="151.65" y="-12.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="OUT_1B" class="3">
 <segment>
@@ -3744,6 +3767,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="45.19" x2="113.01" y2="45.19" width="0.1524" layer="91"/>
 <label x="102.85" y="45.19" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CS3" gate="G$1" pin="1"/>
+<wire x1="171.97" y1="-14.58" x2="171.97" y2="-12.04" width="0.1524" layer="91"/>
+<label x="166.89" y="-12.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="4">
@@ -3842,6 +3870,36 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="10.16" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
 <label x="2.54" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CL3" gate="G$1" pin="2"/>
+<pinref part="GND1" gate="GND" pin="GND"/>
+<wire x1="156.73" y1="-22.2" x2="156.73" y2="-24.74" width="0.1524" layer="91"/>
+<wire x1="156.73" y1="-24.74" x2="164.35" y2="-24.74" width="0.1524" layer="91"/>
+<pinref part="CS3" gate="G$1" pin="2"/>
+<wire x1="171.97" y1="-22.2" x2="171.97" y2="-24.74" width="0.1524" layer="91"/>
+<wire x1="171.97" y1="-24.74" x2="164.35" y2="-24.74" width="0.1524" layer="91"/>
+<junction x="164.35" y="-24.74"/>
+</segment>
+<segment>
+<pinref part="CL4" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="GND" pin="GND"/>
+<wire x1="188.03" y1="-21.96" x2="188.03" y2="-24.5" width="0.1524" layer="91"/>
+<wire x1="188.03" y1="-24.5" x2="195.65" y2="-24.5" width="0.1524" layer="91"/>
+<pinref part="CS4" gate="G$1" pin="2"/>
+<wire x1="203.27" y1="-21.96" x2="203.27" y2="-24.5" width="0.1524" layer="91"/>
+<wire x1="203.27" y1="-24.5" x2="195.65" y2="-24.5" width="0.1524" layer="91"/>
+<junction x="195.65" y="-24.5"/>
+</segment>
+<segment>
+<pinref part="CL5" gate="G$1" pin="2"/>
+<pinref part="GND8" gate="GND" pin="GND"/>
+<wire x1="219.53" y1="-20.92" x2="219.53" y2="-23.46" width="0.1524" layer="91"/>
+<wire x1="219.53" y1="-23.46" x2="227.15" y2="-23.46" width="0.1524" layer="91"/>
+<pinref part="CS5" gate="G$1" pin="2"/>
+<wire x1="234.77" y1="-20.92" x2="234.77" y2="-23.46" width="0.1524" layer="91"/>
+<wire x1="234.77" y1="-23.46" x2="227.15" y2="-23.46" width="0.1524" layer="91"/>
+<junction x="227.15" y="-23.46"/>
+</segment>
 </net>
 <net name="OUT_2A" class="3">
 <segment>
@@ -3853,6 +3911,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="68.05" x2="113.01" y2="68.05" width="0.1524" layer="91"/>
 <label x="102.85" y="68.05" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CL4" gate="G$1" pin="1"/>
+<wire x1="188.03" y1="-14.34" x2="188.03" y2="-11.8" width="0.1524" layer="91"/>
+<label x="182.95" y="-11.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT_2B" class="3">
@@ -3866,6 +3929,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="115.55" y1="60.43" x2="113.01" y2="60.43" width="0.1524" layer="91"/>
 <label x="102.85" y="60.43" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CS4" gate="G$1" pin="1"/>
+<wire x1="203.27" y1="-14.34" x2="203.27" y2="-11.8" width="0.1524" layer="91"/>
+<label x="198.19" y="-11.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="OUT_3A" class="3">
 <segment>
@@ -3878,6 +3946,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="115.55" y1="83.29" x2="113.01" y2="83.29" width="0.1524" layer="91"/>
 <label x="102.85" y="83.29" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CL5" gate="G$1" pin="1"/>
+<wire x1="219.53" y1="-13.3" x2="219.53" y2="-10.76" width="0.1524" layer="91"/>
+<label x="214.45" y="-10.76" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="OUT_3B" class="3">
 <segment>
@@ -3889,6 +3962,11 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="75.67" x2="113.01" y2="75.67" width="0.1524" layer="91"/>
 <label x="102.85" y="75.67" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CS5" gate="G$1" pin="1"/>
+<wire x1="234.77" y1="-13.3" x2="234.77" y2="-10.76" width="0.1524" layer="91"/>
+<label x="229.69" y="-10.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="H1" class="3">
@@ -4234,6 +4312,14 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="44.9" y1="-34.45" x2="141.8" y2="-34.45" width="0.1524" layer="91" style="longdash"/>
 <wire x1="141.8" y1="-34.45" x2="141.8" y2="-2.35" width="0.1524" layer="91" style="longdash"/>
 <wire x1="141.8" y1="-2.35" x2="45.05" y2="-2.35" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<wire x1="147.05" y1="-2.1" x2="147.05" y2="-34.3" width="0.1524" layer="91" style="longdash"/>
+<wire x1="147.05" y1="-34.3" x2="243.95" y2="-34.3" width="0.1524" layer="91" style="longdash"/>
+<wire x1="243.95" y1="-34.3" x2="243.95" y2="-2.2" width="0.1524" layer="91" style="longdash"/>
+<wire x1="243.95" y1="-2.2" x2="147.2" y2="-2.2" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>

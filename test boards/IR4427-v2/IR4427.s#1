@@ -3581,15 +3581,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <part name="IC3" library="ir" library_urn="urn:adsk.eagle:library:248" deviceset="IR4427" device="" package3d_urn="urn:adsk.eagle:package:15357/1"/>
 <part name="INPUT" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA06-1" device="" package3d_urn="urn:adsk.eagle:package:8340/1"/>
 <part name="HALL" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA03-2" device="" package3d_urn="urn:adsk.eagle:package:8334/1"/>
-<part name="C1A" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="C1B" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="GND" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C2A" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="C2B" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="GND1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C3A" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="C3B" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" deviceset="C" device="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="1n"/>
-<part name="GND2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="IRF7389" device="" package3d_urn="urn:adsk.eagle:package:28546/2"/>
 <part name="Q2" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="IRF7389" device="" package3d_urn="urn:adsk.eagle:package:28546/2"/>
 <part name="Q3" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="IRF7389" device="" package3d_urn="urn:adsk.eagle:package:28546/2"/>
@@ -3631,15 +3622,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <instance part="IC3" gate="P" x="68.61" y="42.91"/>
 <instance part="INPUT" gate="1" x="-2.54" y="71.12"/>
 <instance part="HALL" gate="1" x="17.78" y="55.88"/>
-<instance part="C1A" gate="G$1" x="55.04" y="7.14"/>
-<instance part="C1B" gate="G$1" x="70.28" y="7.14"/>
-<instance part="GND" gate="GND" x="62.66" y="-3.02"/>
-<instance part="C2A" gate="G$1" x="85.52" y="7.14"/>
-<instance part="C2B" gate="G$1" x="100.76" y="7.14"/>
-<instance part="GND1" gate="GND" x="93.14" y="-3.02"/>
-<instance part="C3A" gate="G$1" x="116" y="7.14"/>
-<instance part="C3B" gate="G$1" x="131.24" y="7.14"/>
-<instance part="GND2" gate="GND" x="123.62" y="-3.02"/>
 <instance part="Q1" gate="G$1" x="154.94" y="88.9"/>
 <instance part="Q2" gate="G$1" x="180.34" y="88.9"/>
 <instance part="Q3" gate="G$1" x="205.74" y="88.9"/>
@@ -3747,11 +3729,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <label x="83.85" y="91.17" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C1A" gate="G$1" pin="1"/>
-<wire x1="55.04" y1="9.68" x2="55.04" y2="12.22" width="0.1524" layer="91"/>
-<label x="49.96" y="12.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="52.81" x2="113.01" y2="52.81" width="0.1524" layer="91"/>
 <label x="102.85" y="52.81" size="1.778" layer="95"/>
@@ -3762,11 +3739,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="IC1" gate="P" pin="OUTB"/>
 <wire x1="81.31" y1="86.09" x2="83.85" y2="86.09" width="0.1524" layer="91"/>
 <label x="83.85" y="86.09" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C1B" gate="G$1" pin="1"/>
-<wire x1="70.28" y1="9.68" x2="70.28" y2="12.22" width="0.1524" layer="91"/>
-<label x="65.2" y="12.22" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -3794,36 +3766,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="HALL" gate="1" pin="1"/>
 <wire x1="25.4" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 <label x="27.94" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C1A" gate="G$1" pin="2"/>
-<pinref part="GND" gate="GND" pin="GND"/>
-<wire x1="55.04" y1="2.06" x2="55.04" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="55.04" y1="-0.48" x2="62.66" y2="-0.48" width="0.1524" layer="91"/>
-<pinref part="C1B" gate="G$1" pin="2"/>
-<wire x1="70.28" y1="2.06" x2="70.28" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="70.28" y1="-0.48" x2="62.66" y2="-0.48" width="0.1524" layer="91"/>
-<junction x="62.66" y="-0.48"/>
-</segment>
-<segment>
-<pinref part="C2A" gate="G$1" pin="2"/>
-<pinref part="GND1" gate="GND" pin="GND"/>
-<wire x1="85.52" y1="2.06" x2="85.52" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="85.52" y1="-0.48" x2="93.14" y2="-0.48" width="0.1524" layer="91"/>
-<pinref part="C2B" gate="G$1" pin="2"/>
-<wire x1="100.76" y1="2.06" x2="100.76" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="100.76" y1="-0.48" x2="93.14" y2="-0.48" width="0.1524" layer="91"/>
-<junction x="93.14" y="-0.48"/>
-</segment>
-<segment>
-<pinref part="C3A" gate="G$1" pin="2"/>
-<pinref part="GND2" gate="GND" pin="GND"/>
-<wire x1="116" y1="2.06" x2="116" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="116" y1="-0.48" x2="123.62" y2="-0.48" width="0.1524" layer="91"/>
-<pinref part="C3B" gate="G$1" pin="2"/>
-<wire x1="131.24" y1="2.06" x2="131.24" y2="-0.48" width="0.1524" layer="91"/>
-<wire x1="131.24" y1="-0.48" x2="123.62" y2="-0.48" width="0.1524" layer="91"/>
-<junction x="123.62" y="-0.48"/>
 </segment>
 <segment>
 <pinref part="MOTOR" gate="1" pin="4"/>
@@ -3908,11 +3850,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <label x="83.85" y="68.31" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C2A" gate="G$1" pin="1"/>
-<wire x1="85.52" y1="9.68" x2="85.52" y2="12.22" width="0.1524" layer="91"/>
-<label x="80.44" y="12.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="68.05" x2="113.01" y2="68.05" width="0.1524" layer="91"/>
 <label x="102.85" y="68.05" size="1.778" layer="95"/>
@@ -3923,11 +3860,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="IC2" gate="P" pin="OUTB"/>
 <wire x1="81.31" y1="63.23" x2="83.85" y2="63.23" width="0.1524" layer="91"/>
 <label x="83.85" y="63.23" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2B" gate="G$1" pin="1"/>
-<wire x1="100.76" y1="9.68" x2="100.76" y2="12.22" width="0.1524" layer="91"/>
-<label x="95.68" y="12.22" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
@@ -3942,11 +3874,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <label x="83.85" y="45.45" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C3A" gate="G$1" pin="1"/>
-<wire x1="116" y1="9.68" x2="116" y2="12.22" width="0.1524" layer="91"/>
-<label x="110.92" y="12.22" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="115.55" y1="83.29" x2="113.01" y2="83.29" width="0.1524" layer="91"/>
 <label x="102.85" y="83.29" size="1.778" layer="95"/>
@@ -3957,11 +3884,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <pinref part="IC3" gate="P" pin="OUTB"/>
 <wire x1="81.31" y1="40.37" x2="83.85" y2="40.37" width="0.1524" layer="91"/>
 <label x="83.85" y="40.37" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C3B" gate="G$1" pin="1"/>
-<wire x1="131.24" y1="9.68" x2="131.24" y2="12.22" width="0.1524" layer="91"/>
-<label x="126.16" y="12.22" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -4234,7 +4156,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <label x="27.94" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="3">
+<net name="SINK" class="3">
 <segment>
 <pinref part="Q1" gate="G$1" pin="N-S"/>
 <wire x1="157.48" y1="78.74" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
@@ -4253,6 +4175,7 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="180.34" y1="71.12" x2="180.34" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
 <junction x="182.88" y="73.66"/>
+<label x="173" y="73.85" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ACS_OUT" class="3">
@@ -4307,10 +4230,10 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="44.9" y1="25.15" x2="44.9" y2="-34.45" width="0.1524" layer="91" style="longdash"/>
+<wire x1="44.9" y1="-2.25" x2="44.9" y2="-34.45" width="0.1524" layer="91" style="longdash"/>
 <wire x1="44.9" y1="-34.45" x2="141.8" y2="-34.45" width="0.1524" layer="91" style="longdash"/>
-<wire x1="141.8" y1="-34.45" x2="141.8" y2="25.2" width="0.1524" layer="91" style="longdash"/>
-<wire x1="141.8" y1="25.2" x2="45.05" y2="25.2" width="0.1524" layer="91" style="longdash"/>
+<wire x1="141.8" y1="-34.45" x2="141.8" y2="-2.35" width="0.1524" layer="91" style="longdash"/>
+<wire x1="141.8" y1="-2.35" x2="45.05" y2="-2.35" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>

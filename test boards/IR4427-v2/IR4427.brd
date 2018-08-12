@@ -1086,6 +1086,30 @@ design rules under a new name.</description>
 <attribute name="SPICEMODEL" value="NONE" x="34" y="35.2" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="34" y="35.2" size="1.778" layer="27" display="off"/>
 </element>
+<element name="CL3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u" x="12.6" y="12.8">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="12.8" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="12.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CS3" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u" x="17.8" y="6.6">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="6.6" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="6.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CL4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u" x="17.8" y="12.8">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="0.4" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="0.4" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CS4" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u" x="12.6" y="0.4">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="-5.8" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="-5.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CL5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="4.7u" x="12.6" y="6.6">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="-12" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="-12" size="1.778" layer="27" display="off"/>
+</element>
+<element name="CS5" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="C1206" package3d_urn="urn:adsk.eagle:package:13279/1" value="0.1u" x="17.8" y="0.4">
+<attribute name="SPICEMODEL" value="NONE" x="12.6" y="-18.2" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.6" y="-18.2" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC_18" class="2">
@@ -1103,29 +1127,33 @@ design rules under a new name.</description>
 <contactref element="Q1" pad="3"/>
 <contactref element="Q2" pad="3"/>
 <contactref element="Q3" pad="3"/>
-<wire x1="27.4" y1="45" x2="38.4568" y2="43.365" width="0" layer="19" extent="1-1"/>
-<wire x1="29.81" y1="44.93" x2="27.4" y2="45" width="0" layer="19" extent="1-1"/>
-<wire x1="41.1" y1="45.4" x2="29.81" y2="44.93" width="0" layer="19" extent="1-1"/>
-<wire x1="13.5" y1="42.73" x2="41.1" y2="45.4" width="0" layer="19" extent="1-1"/>
-<wire x1="16.5" y1="42.8" x2="13.5" y2="42.73" width="0" layer="19" extent="1-1"/>
+<wire x1="38.4568" y1="43.365" x2="41.1" y2="45.4" width="0" layer="19" extent="1-16"/>
+<wire x1="29.81" y1="44.93" x2="38.4568" y2="43.365" width="0" layer="19" extent="1-1"/>
+<wire x1="27.4" y1="45" x2="29.81" y2="44.93" width="0" layer="19" extent="16-16"/>
+<wire x1="16.5" y1="42.8" x2="27.4" y2="45" width="0" layer="19" extent="1-16"/>
+<wire x1="13.5" y1="42.73" x2="16.5" y2="42.8" width="0" layer="19" extent="1-1"/>
 <wire x1="38.4568" y1="31.865" x2="38.4568" y2="43.365" width="0" layer="19" extent="1-1"/>
-<wire x1="27.4" y1="33" x2="38.4568" y2="31.865" width="0" layer="19" extent="1-1"/>
-<wire x1="29.81" y1="33.03" x2="27.4" y2="33" width="0" layer="19" extent="1-1"/>
+<wire x1="29.81" y1="33.03" x2="38.4568" y2="31.865" width="0" layer="19" extent="1-1"/>
+<wire x1="27.4" y1="33" x2="29.81" y2="33.03" width="0" layer="19" extent="16-16"/>
 <wire x1="38.4568" y1="21.365" x2="38.4568" y2="31.865" width="0" layer="19" extent="1-1"/>
-<wire x1="27.4" y1="21" x2="38.4568" y2="21.365" width="0" layer="19" extent="1-1"/>
-<wire x1="29.81" y1="21.03" x2="27.4" y2="21" width="0" layer="19" extent="1-1"/>
+<wire x1="29.81" y1="21.03" x2="38.4568" y2="21.365" width="0" layer="19" extent="1-1"/>
+<wire x1="27.4" y1="21" x2="29.81" y2="21.03" width="0" layer="19" extent="16-16"/>
+<wire x1="19.9" y1="24" x2="27.4" y2="21" width="0" layer="19" extent="1-16"/>
 <wire x1="48" y1="18.578" x2="38.4568" y2="21.365" width="0" layer="19" extent="1-1"/>
-<wire x1="19.9" y1="24" x2="29.81" y2="21.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_1A" class="3">
 <contactref element="IC1" pad="7"/>
 <contactref element="R11" pad="1"/>
+<contactref element="CL3" pad="1"/>
 <wire x1="29.81" y1="47.47" x2="32.578" y2="47.5" width="0" layer="19" extent="1-1"/>
+<wire x1="11.2" y1="12.8" x2="29.81" y2="47.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_1B" class="3">
 <contactref element="IC1" pad="5"/>
 <contactref element="R12" pad="1"/>
+<contactref element="CS3" pad="1"/>
 <wire x1="29.81" y1="42.39" x2="32.578" y2="42.5" width="0" layer="19" extent="1-1"/>
+<wire x1="16.4" y1="6.6" x2="29.81" y2="42.39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="4">
 <contactref element="IC1" pad="3"/>
@@ -1148,6 +1176,12 @@ design rules under a new name.</description>
 <contactref element="LED18V" pad="C"/>
 <contactref element="POWER" pad="4"/>
 <contactref element="J1" pad="3"/>
+<contactref element="CL3" pad="2"/>
+<contactref element="CS3" pad="2"/>
+<contactref element="CL4" pad="2"/>
+<contactref element="CS4" pad="2"/>
+<contactref element="CL5" pad="2"/>
+<contactref element="CS5" pad="2"/>
 <wire x1="48" y1="39.73" x2="54.603" y2="43.54" width="0" layer="19" extent="1-1"/>
 <wire x1="43.6" y1="34.405" x2="48" y2="39.73" width="0" layer="19" extent="16-16"/>
 <wire x1="39.6" y1="36.8" x2="43.6" y2="34.405" width="0" layer="19" extent="16-16"/>
@@ -1167,26 +1201,40 @@ design rules under a new name.</description>
 <wire x1="17.1" y1="24" x2="22.19" y2="33.03" width="0" layer="19" extent="1-1"/>
 <wire x1="22.19" y1="21.03" x2="17.1" y2="24" width="0" layer="19" extent="1-1"/>
 <wire x1="24.6" y1="21" x2="22.19" y2="21.03" width="0" layer="19" extent="16-16"/>
+<wire x1="19.2" y1="12.8" x2="22.19" y2="21.03" width="0" layer="19" extent="1-1"/>
+<wire x1="14" y1="12.8" x2="19.2" y2="12.8" width="0" layer="19" extent="1-1"/>
+<wire x1="19.2" y1="6.6" x2="19.2" y2="12.8" width="0" layer="19" extent="1-1"/>
+<wire x1="14" y1="6.6" x2="19.2" y2="6.6" width="0" layer="19" extent="1-1"/>
+<wire x1="19.2" y1="0.4" x2="19.2" y2="6.6" width="0" layer="19" extent="1-1"/>
+<wire x1="14" y1="0.4" x2="19.2" y2="0.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_2A" class="3">
 <contactref element="IC2" pad="7"/>
 <contactref element="R9" pad="1"/>
+<contactref element="CL4" pad="1"/>
 <wire x1="32.578" y1="35.2" x2="29.81" y2="35.57" width="0" layer="19" extent="1-1"/>
+<wire x1="16.4" y1="12.8" x2="29.81" y2="35.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_2B" class="3">
 <contactref element="IC2" pad="5"/>
 <contactref element="R10" pad="1"/>
+<contactref element="CS4" pad="1"/>
 <wire x1="32.578" y1="30.2" x2="29.81" y2="30.49" width="0" layer="19" extent="1-1"/>
+<wire x1="11.2" y1="0.4" x2="29.81" y2="30.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_3A" class="3">
 <contactref element="IC3" pad="7"/>
 <contactref element="R7" pad="1"/>
+<contactref element="CL5" pad="1"/>
 <wire x1="29.81" y1="23.57" x2="32.578" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="11.2" y1="6.6" x2="29.81" y2="23.57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT_3B" class="3">
 <contactref element="IC3" pad="5"/>
 <contactref element="R8" pad="1"/>
+<contactref element="CS5" pad="1"/>
 <wire x1="29.81" y1="18.49" x2="32.578" y2="19" width="0" layer="19" extent="1-1"/>
+<wire x1="16.4" y1="0.4" x2="29.81" y2="18.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="H1" class="3">
 <contactref element="HALL" pad="6"/>

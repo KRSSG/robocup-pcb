@@ -4288,31 +4288,6 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="292.1" y1="63.5" x2="292.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="141.05" y1="109.15" x2="141.05" y2="29.1" width="0.1524" layer="91" style="longdash"/>
-<wire x1="141.05" y1="29.1" x2="312.7" y2="29.1" width="0.1524" layer="91" style="longdash"/>
-<wire x1="312.7" y1="29.1" x2="312.7" y2="112.75" width="0.1524" layer="91" style="longdash"/>
-<wire x1="312.7" y1="112.75" x2="141.05" y2="112.75" width="0.1524" layer="91" style="longdash"/>
-<wire x1="141.05" y1="112.75" x2="141.05" y2="109.15" width="0.1524" layer="91" style="longdash"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<wire x1="37.55" y1="80.6" x2="37.55" y2="8.85" width="0.1524" layer="91" style="longdash"/>
-<wire x1="37.55" y1="8.85" x2="89.95" y2="8.85" width="0.1524" layer="91" style="longdash"/>
-<wire x1="89.95" y1="8.85" x2="89.95" y2="80.65" width="0.1524" layer="91" style="longdash"/>
-<wire x1="89.95" y1="80.65" x2="37.6" y2="80.65" width="0.1524" layer="91" style="longdash"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="44.75" y1="-11.5" x2="44.75" y2="-40.25" width="0.1524" layer="91" style="longdash"/>
-<wire x1="44.75" y1="-40.25" x2="143.05" y2="-40.25" width="0.1524" layer="91" style="longdash"/>
-<wire x1="143.05" y1="-40.25" x2="143.05" y2="-11.45" width="0.1524" layer="91" style="longdash"/>
-<wire x1="143.05" y1="-11.45" x2="44.75" y2="-11.45" width="0.1524" layer="91" style="longdash"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>

@@ -168,7 +168,7 @@
 <wire x1="40.08" y1="13.74" x2="44.09" y2="20.67" width="0.4064" layer="20" locked="yes"/>
 <wire x1="44.09" y1="20.67" x2="51.01" y2="16.67" width="0.4064" layer="20" locked="yes"/>
 <wire x1="51.01" y1="16.67" x2="47.01" y2="9.74" width="0.4064" layer="20" locked="yes"/>
-<wire x1="47.01" y1="9.74" x2="126.99" y2="9.74" width="0.4064" layer="20" curve="54.73"/>
+<wire x1="47.01" y1="9.74" x2="126.99" y2="9.74" width="0.4064" layer="20" curve="54.73" locked="yes"/>
 <wire x1="126.99" y1="9.74" x2="122.99" y2="16.67" width="0.4064" layer="20" locked="yes"/>
 <wire x1="122.99" y1="16.67" x2="129.91" y2="20.67" width="0.4064" layer="20" locked="yes"/>
 <wire x1="129.91" y1="20.67" x2="133.92" y2="13.74" width="0.4064" layer="20" locked="yes"/>
@@ -180,8 +180,8 @@
 <hole x="15.12" y="128.5" drill="3.2" locked="yes"/>
 <hole x="142.89" y="148.36" drill="3.2" locked="yes"/>
 <hole x="158.88" y="128.5" drill="3.2" locked="yes"/>
-<wire x1="38.31081875" y1="159.082740625" x2="40.0177" y2="13.9065" width="0.4064" layer="20" curve="113.1196"/>
-<wire x1="133.931659375" y1="13.85061875" x2="135.8646" y2="159.17418125" width="0.4064" layer="20" curve="113.490391"/>
+<wire x1="38.165" y1="159" x2="40.08" y2="13.74" width="0.4064" layer="20" curve="113.1196" locked="yes"/>
+<wire x1="133.92" y1="13.74" x2="135.835" y2="159" width="0.4064" layer="20" curve="113.490391" locked="yes"/>
 </plain>
 <libraries>
 </libraries>

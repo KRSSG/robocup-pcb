@@ -1990,8 +1990,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="C9" pad="1"/>
-<contactref element="R25" pad="2"/>
 <contactref element="J3" pad="2"/>
+<contactref element="R25" pad="2"/>
 <wire x1="3.15468125" y1="-137.53591875" x2="5.68451875" y2="-211.076540625" width="0" layer="19" extent="1-1"/>
 <wire x1="3.15468125" y1="-131.33811875" x2="3.15468125" y2="-137.53591875" width="0" layer="19" extent="1-1"/>
 <wire x1="13.436140625" y1="-132.44068125" x2="3.15468125" y2="-131.33811875" width="0" layer="19" extent="1-1"/>
@@ -2171,6 +2171,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="U6_TX">
 <contactref element="U$6" pad="P$15"/>
+</signal>
+<signal name="N$6">
 </signal>
 </signals>
 <mfgpreviewcolors>

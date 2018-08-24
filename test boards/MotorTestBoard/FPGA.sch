@@ -391,90 +391,400 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="X1" gate="-1" x="45.72" y="63.5"/>
-<instance part="X1" gate="-2" x="66.04" y="63.5"/>
-<instance part="X1" gate="-3" x="45.72" y="60.96"/>
-<instance part="X1" gate="-4" x="66.04" y="60.96"/>
-<instance part="X1" gate="-5" x="45.72" y="58.42"/>
-<instance part="X1" gate="-6" x="66.04" y="58.42"/>
-<instance part="X1" gate="-7" x="45.72" y="55.88"/>
-<instance part="X1" gate="-8" x="66.04" y="55.88"/>
-<instance part="X1" gate="-9" x="45.72" y="53.34"/>
-<instance part="X1" gate="-10" x="66.04" y="53.34"/>
-<instance part="X1" gate="-11" x="45.72" y="50.8"/>
-<instance part="X1" gate="-12" x="66.04" y="50.8"/>
-<instance part="X1" gate="-13" x="45.72" y="48.26"/>
-<instance part="X1" gate="-14" x="66.04" y="48.26"/>
-<instance part="X1" gate="-15" x="45.72" y="45.72"/>
-<instance part="X1" gate="-16" x="66.04" y="45.72"/>
-<instance part="X1" gate="-17" x="45.72" y="43.18"/>
-<instance part="X1" gate="-18" x="66.04" y="43.18"/>
-<instance part="X1" gate="-19" x="45.72" y="40.64"/>
-<instance part="X1" gate="-20" x="66.04" y="40.64"/>
-<instance part="X1" gate="-21" x="45.72" y="38.1"/>
-<instance part="X1" gate="-22" x="66.04" y="38.1"/>
-<instance part="X1" gate="-23" x="45.72" y="35.56"/>
-<instance part="X1" gate="-24" x="66.04" y="35.56"/>
-<instance part="X1" gate="-25" x="45.72" y="33.02"/>
-<instance part="X1" gate="-26" x="66.04" y="33.02"/>
-<instance part="X1" gate="-27" x="45.72" y="30.48"/>
-<instance part="X1" gate="-28" x="66.04" y="30.48"/>
-<instance part="X1" gate="-29" x="45.72" y="27.94"/>
-<instance part="X1" gate="-30" x="66.04" y="27.94"/>
-<instance part="X1" gate="-31" x="45.72" y="25.4"/>
-<instance part="X1" gate="-32" x="66.04" y="25.4"/>
-<instance part="X1" gate="-33" x="45.72" y="22.86"/>
-<instance part="X1" gate="-34" x="66.04" y="22.86"/>
-<instance part="X1" gate="-35" x="45.72" y="20.32"/>
-<instance part="X1" gate="-36" x="66.04" y="20.32"/>
-<instance part="X1" gate="-37" x="45.72" y="17.78"/>
-<instance part="X1" gate="-38" x="66.04" y="17.78"/>
-<instance part="X1" gate="-39" x="45.72" y="15.24"/>
-<instance part="X1" gate="-40" x="66.04" y="15.24"/>
-<instance part="X2" gate="-1" x="83.82" y="63.5"/>
-<instance part="X2" gate="-2" x="104.14" y="63.5"/>
-<instance part="X2" gate="-3" x="83.82" y="60.96"/>
-<instance part="X2" gate="-4" x="104.14" y="60.96"/>
-<instance part="X2" gate="-5" x="83.82" y="58.42"/>
-<instance part="X2" gate="-6" x="104.14" y="58.42"/>
-<instance part="X2" gate="-7" x="83.82" y="55.88"/>
-<instance part="X2" gate="-8" x="104.14" y="55.88"/>
-<instance part="X2" gate="-9" x="83.82" y="53.34"/>
-<instance part="X2" gate="-10" x="104.14" y="53.34"/>
-<instance part="X2" gate="-11" x="83.82" y="50.8"/>
-<instance part="X2" gate="-12" x="104.14" y="50.8"/>
-<instance part="X2" gate="-13" x="83.82" y="48.26"/>
-<instance part="X2" gate="-14" x="104.14" y="48.26"/>
-<instance part="X2" gate="-15" x="83.82" y="45.72"/>
-<instance part="X2" gate="-16" x="104.14" y="45.72"/>
-<instance part="X2" gate="-17" x="83.82" y="43.18"/>
-<instance part="X2" gate="-18" x="104.14" y="43.18"/>
-<instance part="X2" gate="-19" x="83.82" y="40.64"/>
-<instance part="X2" gate="-20" x="104.14" y="40.64"/>
-<instance part="X2" gate="-21" x="83.82" y="38.1"/>
-<instance part="X2" gate="-22" x="104.14" y="38.1"/>
-<instance part="X2" gate="-23" x="83.82" y="35.56"/>
-<instance part="X2" gate="-24" x="104.14" y="35.56"/>
-<instance part="X2" gate="-25" x="83.82" y="33.02"/>
-<instance part="X2" gate="-26" x="104.14" y="33.02"/>
-<instance part="X2" gate="-27" x="83.82" y="30.48"/>
-<instance part="X2" gate="-28" x="104.14" y="30.48"/>
-<instance part="X2" gate="-29" x="83.82" y="27.94"/>
-<instance part="X2" gate="-30" x="104.14" y="27.94"/>
-<instance part="X2" gate="-31" x="83.82" y="25.4"/>
-<instance part="X2" gate="-32" x="104.14" y="25.4"/>
-<instance part="X2" gate="-33" x="83.82" y="22.86"/>
-<instance part="X2" gate="-34" x="104.14" y="22.86"/>
-<instance part="X2" gate="-35" x="83.82" y="20.32"/>
-<instance part="X2" gate="-36" x="104.14" y="20.32"/>
-<instance part="X2" gate="-37" x="83.82" y="17.78"/>
-<instance part="X2" gate="-38" x="104.14" y="17.78"/>
-<instance part="X2" gate="-39" x="83.82" y="15.24"/>
-<instance part="X2" gate="-40" x="104.14" y="15.24"/>
+<instance part="X1" gate="-1" x="55.88" y="63.5"/>
+<instance part="X1" gate="-2" x="78.74" y="63.5"/>
+<instance part="X1" gate="-3" x="55.88" y="60.96"/>
+<instance part="X1" gate="-4" x="78.74" y="60.96"/>
+<instance part="X1" gate="-5" x="55.88" y="58.42"/>
+<instance part="X1" gate="-6" x="78.74" y="58.42"/>
+<instance part="X1" gate="-7" x="55.88" y="55.88"/>
+<instance part="X1" gate="-8" x="78.74" y="55.88"/>
+<instance part="X1" gate="-9" x="55.88" y="53.34"/>
+<instance part="X1" gate="-10" x="78.74" y="53.34"/>
+<instance part="X1" gate="-11" x="55.88" y="50.8"/>
+<instance part="X1" gate="-12" x="78.74" y="50.8"/>
+<instance part="X1" gate="-13" x="55.88" y="48.26"/>
+<instance part="X1" gate="-14" x="78.74" y="48.26"/>
+<instance part="X1" gate="-15" x="55.88" y="45.72"/>
+<instance part="X1" gate="-16" x="78.74" y="45.72"/>
+<instance part="X1" gate="-17" x="55.88" y="43.18"/>
+<instance part="X1" gate="-18" x="78.74" y="43.18"/>
+<instance part="X1" gate="-19" x="55.88" y="40.64"/>
+<instance part="X1" gate="-20" x="78.74" y="40.64"/>
+<instance part="X1" gate="-21" x="55.88" y="38.1"/>
+<instance part="X1" gate="-22" x="78.74" y="38.1"/>
+<instance part="X1" gate="-23" x="55.88" y="35.56"/>
+<instance part="X1" gate="-24" x="78.74" y="35.56"/>
+<instance part="X1" gate="-25" x="55.88" y="33.02"/>
+<instance part="X1" gate="-26" x="78.74" y="33.02"/>
+<instance part="X1" gate="-27" x="55.88" y="30.48"/>
+<instance part="X1" gate="-28" x="78.74" y="30.48"/>
+<instance part="X1" gate="-29" x="55.88" y="27.94"/>
+<instance part="X1" gate="-30" x="78.74" y="27.94"/>
+<instance part="X1" gate="-31" x="55.88" y="25.4"/>
+<instance part="X1" gate="-32" x="78.74" y="25.4"/>
+<instance part="X1" gate="-33" x="55.88" y="22.86"/>
+<instance part="X1" gate="-34" x="78.74" y="22.86"/>
+<instance part="X1" gate="-35" x="55.88" y="20.32"/>
+<instance part="X1" gate="-36" x="78.74" y="20.32"/>
+<instance part="X1" gate="-37" x="55.88" y="17.78"/>
+<instance part="X1" gate="-38" x="78.74" y="17.78"/>
+<instance part="X1" gate="-39" x="55.88" y="15.24"/>
+<instance part="X1" gate="-40" x="78.74" y="15.24"/>
+<instance part="X2" gate="-1" x="101.6" y="63.5"/>
+<instance part="X2" gate="-2" x="127" y="63.5"/>
+<instance part="X2" gate="-3" x="101.6" y="60.96"/>
+<instance part="X2" gate="-4" x="127" y="60.96"/>
+<instance part="X2" gate="-5" x="101.6" y="58.42"/>
+<instance part="X2" gate="-6" x="127" y="58.42"/>
+<instance part="X2" gate="-7" x="101.6" y="55.88"/>
+<instance part="X2" gate="-8" x="127" y="55.88"/>
+<instance part="X2" gate="-9" x="101.6" y="53.34"/>
+<instance part="X2" gate="-10" x="127" y="53.34"/>
+<instance part="X2" gate="-11" x="101.6" y="50.8"/>
+<instance part="X2" gate="-12" x="127" y="50.8"/>
+<instance part="X2" gate="-13" x="101.6" y="48.26"/>
+<instance part="X2" gate="-14" x="127" y="48.26"/>
+<instance part="X2" gate="-15" x="101.6" y="45.72"/>
+<instance part="X2" gate="-16" x="127" y="45.72"/>
+<instance part="X2" gate="-17" x="101.6" y="43.18"/>
+<instance part="X2" gate="-18" x="127" y="43.18"/>
+<instance part="X2" gate="-19" x="101.6" y="40.64"/>
+<instance part="X2" gate="-20" x="127" y="40.64"/>
+<instance part="X2" gate="-21" x="101.6" y="38.1"/>
+<instance part="X2" gate="-22" x="127" y="38.1"/>
+<instance part="X2" gate="-23" x="101.6" y="35.56"/>
+<instance part="X2" gate="-24" x="127" y="35.56"/>
+<instance part="X2" gate="-25" x="101.6" y="33.02"/>
+<instance part="X2" gate="-26" x="127" y="33.02"/>
+<instance part="X2" gate="-27" x="101.6" y="30.48"/>
+<instance part="X2" gate="-28" x="127" y="30.48"/>
+<instance part="X2" gate="-29" x="101.6" y="27.94"/>
+<instance part="X2" gate="-30" x="127" y="27.94"/>
+<instance part="X2" gate="-31" x="101.6" y="25.4"/>
+<instance part="X2" gate="-32" x="127" y="25.4"/>
+<instance part="X2" gate="-33" x="101.6" y="22.86"/>
+<instance part="X2" gate="-34" x="127" y="22.86"/>
+<instance part="X2" gate="-35" x="101.6" y="20.32"/>
+<instance part="X2" gate="-36" x="127" y="20.32"/>
+<instance part="X2" gate="-37" x="101.6" y="17.78"/>
+<instance part="X2" gate="-38" x="127" y="17.78"/>
+<instance part="X2" gate="-39" x="101.6" y="15.24"/>
+<instance part="X2" gate="-40" x="127" y="15.24"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="M11A" class="0">
+<segment>
+<pinref part="X1" gate="-3" pin="S"/>
+<wire x1="53.34" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
+<label x="43.18" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M11B" class="0">
+<segment>
+<pinref part="X1" gate="-5" pin="S"/>
+<wire x1="53.34" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
+<label x="43.18" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M1EA" class="0">
+<segment>
+<pinref part="X1" gate="-4" pin="S"/>
+<wire x1="76.2" y1="60.96" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
+<label x="68.58" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M1EB" class="0">
+<segment>
+<pinref part="X1" gate="-6" pin="S"/>
+<wire x1="76.2" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
+<label x="68.58" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M12A" class="0">
+<segment>
+<pinref part="X1" gate="-7" pin="S"/>
+<wire x1="53.34" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
+<label x="43.18" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M1H1" class="0">
+<segment>
+<pinref part="X1" gate="-8" pin="S"/>
+<wire x1="76.2" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
+<label x="68.58" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M12B" class="0">
+<segment>
+<pinref part="X1" gate="-9" pin="S"/>
+<wire x1="53.34" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
+<label x="43.18" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M13A" class="0">
+<segment>
+<pinref part="X1" gate="-11" pin="S"/>
+<wire x1="53.34" y1="50.8" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
+<label x="43.18" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M13B" class="0">
+<segment>
+<pinref part="X1" gate="-13" pin="S"/>
+<wire x1="53.34" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
+<label x="43.18" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M1H2" class="0">
+<segment>
+<pinref part="X1" gate="-10" pin="S"/>
+<wire x1="76.2" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<label x="68.58" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M1H3" class="0">
+<segment>
+<pinref part="X1" gate="-12" pin="S"/>
+<wire x1="76.2" y1="50.8" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<label x="68.58" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M23B" class="0">
+<segment>
+<pinref part="X1" gate="-37" pin="S"/>
+<wire x1="53.34" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<label x="43.18" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M23A" class="0">
+<segment>
+<pinref part="X1" gate="-35" pin="S"/>
+<wire x1="53.34" y1="20.32" x2="43.18" y2="20.32" width="0.1524" layer="91"/>
+<label x="43.18" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M22B" class="0">
+<segment>
+<pinref part="X1" gate="-33" pin="S"/>
+<wire x1="53.34" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
+<label x="43.18" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M22A" class="0">
+<segment>
+<pinref part="X1" gate="-31" pin="S"/>
+<wire x1="53.34" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<label x="43.18" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M21B" class="0">
+<segment>
+<pinref part="X1" gate="-29" pin="S"/>
+<wire x1="43.18" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<label x="43.18" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M21A" class="0">
+<segment>
+<pinref part="X1" gate="-27" pin="S"/>
+<wire x1="53.34" y1="30.48" x2="43.18" y2="30.48" width="0.1524" layer="91"/>
+<label x="43.18" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M2H3" class="0">
+<segment>
+<pinref part="X1" gate="-38" pin="S"/>
+<wire x1="68.58" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<label x="68.58" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M2H2" class="0">
+<segment>
+<pinref part="X1" gate="-36" pin="S"/>
+<wire x1="68.58" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
+<label x="68.58" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M2H1" class="0">
+<segment>
+<pinref part="X1" gate="-34" pin="S"/>
+<wire x1="68.58" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
+<label x="68.58" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M2EB" class="0">
+<segment>
+<wire x1="71.12" y1="25.4" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-32" pin="S"/>
+<wire x1="71.12" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
+<label x="68.58" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M2EA" class="0">
+<segment>
+<pinref part="X1" gate="-30" pin="S"/>
+<wire x1="68.58" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<label x="68.58" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M3EA" class="0">
+<segment>
+<pinref part="X2" gate="-3" pin="S"/>
+<wire x1="93.98" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
+<label x="93.98" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M3EB" class="0">
+<segment>
+<pinref part="X2" gate="-5" pin="S"/>
+<wire x1="93.98" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
+<label x="93.98" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M3H1" class="0">
+<segment>
+<wire x1="96.52" y1="55.88" x2="93.98" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-7" pin="S"/>
+<wire x1="96.52" y1="55.88" x2="99.06" y2="55.88" width="0.1524" layer="91"/>
+<label x="93.98" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M3H2" class="0">
+<segment>
+<pinref part="X2" gate="-9" pin="S"/>
+<wire x1="93.98" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
+<label x="93.98" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M3H3" class="0">
+<segment>
+<pinref part="X2" gate="-11" pin="S"/>
+<wire x1="93.98" y1="50.8" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
+<label x="93.98" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M31A" class="0">
+<segment>
+<pinref part="X2" gate="-4" pin="S"/>
+<wire x1="114.3" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<label x="114.3" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M31B" class="0">
+<segment>
+<pinref part="X2" gate="-6" pin="S"/>
+<wire x1="114.3" y1="58.42" x2="124.46" y2="58.42" width="0.1524" layer="91"/>
+<label x="114.3" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M32A" class="0">
+<segment>
+<pinref part="X2" gate="-8" pin="S"/>
+<wire x1="114.3" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
+<label x="114.3" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M32B" class="0">
+<segment>
+<pinref part="X2" gate="-10" pin="S"/>
+<wire x1="114.3" y1="53.34" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
+<label x="114.3" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M33A" class="0">
+<segment>
+<pinref part="X2" gate="-12" pin="S"/>
+<wire x1="114.3" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="114.3" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M33B" class="0">
+<segment>
+<pinref part="X2" gate="-14" pin="S"/>
+<wire x1="114.3" y1="48.26" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<label x="114.3" y="48.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M43B" class="0">
+<segment>
+<pinref part="X2" gate="-38" pin="S"/>
+<wire x1="124.46" y1="17.78" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
+<label x="116.84" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M43A" class="0">
+<segment>
+<pinref part="X2" gate="-36" pin="S"/>
+<wire x1="116.84" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
+<label x="116.84" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M42B" class="0">
+<segment>
+<pinref part="X2" gate="-34" pin="S"/>
+<wire x1="116.84" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
+<label x="116.84" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M42A" class="0">
+<segment>
+<pinref part="X2" gate="-32" pin="S"/>
+<wire x1="116.84" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<label x="116.84" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M41B" class="0">
+<segment>
+<pinref part="X2" gate="-30" pin="S"/>
+<wire x1="116.84" y1="27.94" x2="124.46" y2="27.94" width="0.1524" layer="91"/>
+<label x="116.84" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M41A" class="0">
+<segment>
+<pinref part="X2" gate="-28" pin="S"/>
+<wire x1="116.84" y1="30.48" x2="124.46" y2="30.48" width="0.1524" layer="91"/>
+<label x="116.84" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M4H3" class="0">
+<segment>
+<pinref part="X2" gate="-37" pin="S"/>
+<wire x1="93.98" y1="17.78" x2="99.06" y2="17.78" width="0.1524" layer="91"/>
+<label x="93.98" y="17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M4H2" class="0">
+<segment>
+<pinref part="X2" gate="-35" pin="S"/>
+<wire x1="93.98" y1="20.32" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
+<label x="93.98" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M4H1" class="0">
+<segment>
+<pinref part="X2" gate="-33" pin="S"/>
+<wire x1="93.98" y1="22.86" x2="99.06" y2="22.86" width="0.1524" layer="91"/>
+<label x="93.98" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M4EB" class="0">
+<segment>
+<pinref part="X2" gate="-31" pin="S"/>
+<wire x1="93.98" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
+<label x="93.98" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="M4EA" class="0">
+<segment>
+<pinref part="X2" gate="-29" pin="S"/>
+<wire x1="93.98" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
+<label x="93.98" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

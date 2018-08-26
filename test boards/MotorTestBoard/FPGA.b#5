@@ -471,6 +471,138 @@ design rules under a new name.</description>
 </element>
 </elements>
 <signals>
+<signal name="M11A">
+<contactref element="X1" pad="3"/>
+</signal>
+<signal name="M11B">
+<contactref element="X1" pad="5"/>
+</signal>
+<signal name="M1EA">
+<contactref element="X1" pad="4"/>
+</signal>
+<signal name="M1EB">
+<contactref element="X1" pad="6"/>
+</signal>
+<signal name="M12A">
+<contactref element="X1" pad="7"/>
+</signal>
+<signal name="M1H1">
+<contactref element="X1" pad="8"/>
+</signal>
+<signal name="M12B">
+<contactref element="X1" pad="9"/>
+</signal>
+<signal name="M13A">
+<contactref element="X1" pad="11"/>
+</signal>
+<signal name="M13B">
+<contactref element="X1" pad="13"/>
+</signal>
+<signal name="M1H2">
+<contactref element="X1" pad="10"/>
+</signal>
+<signal name="M1H3">
+<contactref element="X1" pad="12"/>
+</signal>
+<signal name="M23B">
+<contactref element="X1" pad="37"/>
+</signal>
+<signal name="M23A">
+<contactref element="X1" pad="35"/>
+</signal>
+<signal name="M22B">
+<contactref element="X1" pad="33"/>
+</signal>
+<signal name="M22A">
+<contactref element="X1" pad="31"/>
+</signal>
+<signal name="M21B">
+<contactref element="X1" pad="29"/>
+</signal>
+<signal name="M21A">
+<contactref element="X1" pad="27"/>
+</signal>
+<signal name="M2H3">
+<contactref element="X1" pad="38"/>
+</signal>
+<signal name="M2H2">
+<contactref element="X1" pad="36"/>
+</signal>
+<signal name="M2H1">
+<contactref element="X1" pad="34"/>
+</signal>
+<signal name="M2EB">
+<contactref element="X1" pad="32"/>
+</signal>
+<signal name="M2EA">
+<contactref element="X1" pad="30"/>
+</signal>
+<signal name="M3EA">
+<contactref element="X2" pad="3"/>
+</signal>
+<signal name="M3EB">
+<contactref element="X2" pad="5"/>
+</signal>
+<signal name="M3H1">
+<contactref element="X2" pad="7"/>
+</signal>
+<signal name="M3H2">
+<contactref element="X2" pad="9"/>
+</signal>
+<signal name="M3H3">
+<contactref element="X2" pad="11"/>
+</signal>
+<signal name="M31A">
+<contactref element="X2" pad="4"/>
+</signal>
+<signal name="M31B">
+<contactref element="X2" pad="6"/>
+</signal>
+<signal name="M32A">
+<contactref element="X2" pad="8"/>
+</signal>
+<signal name="M32B">
+<contactref element="X2" pad="10"/>
+</signal>
+<signal name="M33A">
+<contactref element="X2" pad="12"/>
+</signal>
+<signal name="M33B">
+<contactref element="X2" pad="14"/>
+</signal>
+<signal name="M43B">
+<contactref element="X2" pad="38"/>
+</signal>
+<signal name="M43A">
+<contactref element="X2" pad="36"/>
+</signal>
+<signal name="M42B">
+<contactref element="X2" pad="34"/>
+</signal>
+<signal name="M42A">
+<contactref element="X2" pad="32"/>
+</signal>
+<signal name="M41B">
+<contactref element="X2" pad="30"/>
+</signal>
+<signal name="M41A">
+<contactref element="X2" pad="28"/>
+</signal>
+<signal name="M4H3">
+<contactref element="X2" pad="37"/>
+</signal>
+<signal name="M4H2">
+<contactref element="X2" pad="35"/>
+</signal>
+<signal name="M4H1">
+<contactref element="X2" pad="33"/>
+</signal>
+<signal name="M4EB">
+<contactref element="X2" pad="31"/>
+</signal>
+<signal name="M4EA">
+<contactref element="X2" pad="29"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

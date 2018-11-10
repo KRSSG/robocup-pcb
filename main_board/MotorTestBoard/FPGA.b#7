@@ -1546,13 +1546,6 @@ design rules under a new name.</description>
 <wire x1="153.67" y1="53.34" x2="146.05" y2="53.21" width="0" layer="19" extent="1-1"/>
 <wire x1="153.67" y1="39.37" x2="153.67" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$1">
-<contactref element="J5" pad="BATT"/>
-<contactref element="S2" pad="5"/>
-<contactref element="S2" pad="2"/>
-<wire x1="161.29" y1="73.66" x2="161.29" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="161.29" y1="84.1645" x2="161.29" y2="68.58" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="0">
 <contactref element="X1" pad="1"/>
 <contactref element="X2" pad="2"/>
@@ -1565,10 +1558,16 @@ design rules under a new name.</description>
 <signal name="INPUT">
 <contactref element="U3" pad="1"/>
 <contactref element="U3" pad="3"/>
-<wire x1="2.286" y1="-26.8224" x2="-2.286" y2="-26.8224" width="0" layer="19" extent="1-1"/>
+<contactref element="J5" pad="BATT"/>
+<wire x1="2.286" y1="-26.8224" x2="161.29" y2="84.1645" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.286" y1="-26.8224" x2="2.286" y2="-26.8224" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="U3" pad="2"/>
+<contactref element="S2" pad="5"/>
+<contactref element="S2" pad="2"/>
+<wire x1="161.29" y1="68.58" x2="161.29" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="0" y1="-20.1676" x2="161.29" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

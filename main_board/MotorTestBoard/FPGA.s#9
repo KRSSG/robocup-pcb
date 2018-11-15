@@ -5893,17 +5893,6 @@ Siemens, distributor Buerklin, 11G766</description>
 <label x="-93.98" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="J5" gate="G$1" pin="+"/>
-<wire x1="-137.16" y1="-78.74" x2="-116.84" y2="-78.74" width="0.1524" layer="91"/>
-<pinref part="S2" gate="B" pin="P"/>
-<pinref part="S2" gate="A" pin="P"/>
-<wire x1="-111.76" y1="-78.74" x2="-111.76" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="-78.74" x2="-111.76" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="-111.76" y="-78.74"/>
-</segment>
-</net>
 <net name="0" class="0">
 <segment>
 <pinref part="X1" gate="-1" pin="S"/>
@@ -5932,20 +5921,32 @@ Siemens, distributor Buerklin, 11G766</description>
 </net>
 <net name="INPUT" class="0">
 <segment>
-<wire x1="-104.14" y1="-48.26" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-48.26" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-48.26" x2="-127" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="~A"/>
 <wire x1="-127" y1="-55.88" x2="-127" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="A"/>
 <wire x1="-121.92" y1="-55.88" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="-121.92" y="-48.26"/>
+<pinref part="J5" gate="G$1" pin="+"/>
+<wire x1="-137.16" y1="-78.74" x2="-132.08" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-78.74" x2="-132.08" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="-43.18" x2="-101.6" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-43.18" x2="-101.6" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="K"/>
-<wire x1="-116.84" y1="-66.04" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="-66.04" x2="-116.84" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-66.04" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-66.04" x2="-109.22" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-76.2" x2="-116.84" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="S2" gate="B" pin="P"/>
+<pinref part="S2" gate="A" pin="P"/>
+<wire x1="-111.76" y1="-78.74" x2="-111.76" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-78.74" x2="-111.76" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="-111.76" y="-78.74"/>
+<wire x1="-116.84" y1="-76.2" x2="-116.84" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

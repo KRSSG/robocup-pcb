@@ -6083,17 +6083,6 @@ Siemens, distributor Buerklin, 11G766</description>
 <label x="-38.1" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5VI" class="1">
-<segment>
-<pinref part="IC2" gate="A1" pin="VO"/>
-<wire x1="132.08" y1="-17.78" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="-17.78" x2="137.16" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="133.68" y1="-20.94" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="133.68" y1="-17.78" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
-<label x="134.62" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="INPUT" class="5">
 <segment>
 <wire x1="-101.6" y1="-48.26" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
@@ -6206,6 +6195,64 @@ Siemens, distributor Buerklin, 11G766</description>
 <pinref part="JP2" gate="A" pin="15"/>
 <wire x1="167.64" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <label x="154.94" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP_RX" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="21"/>
+<wire x1="167.64" y1="38.1" x2="149.86" y2="38.1" width="0.1524" layer="91"/>
+<label x="149.86" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RX"/>
+<wire x1="-30.48" y1="-167.64" x2="-35.56" y2="-167.64" width="0.1524" layer="91"/>
+<label x="-35.56" y="-167.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP_TX" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="23"/>
+<wire x1="167.64" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
+<label x="149.86" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="TX"/>
+<wire x1="-30.48" y1="-170.18" x2="-35.56" y2="-170.18" width="0.1524" layer="91"/>
+<label x="-35.56" y="-170.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP_EN" class="0">
+<segment>
+<pinref part="JP2" gate="A" pin="25"/>
+<wire x1="167.64" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
+<label x="149.86" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SEN"/>
+<wire x1="2.54" y1="-175.26" x2="17.78" y2="-175.26" width="0.1524" layer="91"/>
+<label x="12.7" y="-175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P22"/>
+<wire x1="-30.48" y1="-172.72" x2="-35.56" y2="-172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V1" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="5V"/>
+<wire x1="2.54" y1="-132.08" x2="10.16" y2="-132.08" width="0.1524" layer="91"/>
+<label x="7.62" y="-132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="A1" pin="VO"/>
+<wire x1="132.08" y1="-17.78" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="-17.78" x2="137.16" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="133.68" y1="-20.94" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="133.68" y1="-17.78" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
+<label x="134.62" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

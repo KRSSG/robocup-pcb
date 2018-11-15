@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4907,6 +4907,9 @@ Siemens, distributor Buerklin, 11G766</description>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="SV5" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="SV14" library="con-lstb" deviceset="MA10-1" device=""/>
+<part name="SV17" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="SV18" library="con-lstb" deviceset="MA08-1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4951,6 +4954,9 @@ Siemens, distributor Buerklin, 11G766</description>
 <instance part="GND1" gate="1" x="16.54" y="-147.78" rot="MR0"/>
 <instance part="GND2" gate="1" x="-47.16" y="-169.18" rot="MR0"/>
 <instance part="SV5" gate="1" x="220.98" y="35.56" rot="MR180"/>
+<instance part="SV14" gate="1" x="-78.74" y="127"/>
+<instance part="SV17" gate="1" x="-45.72" y="129.54"/>
+<instance part="SV18" gate="1" x="-7.62" y="132.08"/>
 </instances>
 <busses>
 </busses>

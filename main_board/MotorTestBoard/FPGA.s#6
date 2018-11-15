@@ -4778,7 +4778,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <class number="4" name="gnd" width="1.4" drill="0.4">
 <clearance class="4" value="0.2"/>
 </class>
-<class number="5" name="VCKT" width="3.5" drill="4">
+<class number="5" name="VCKT" width="4" drill="4">
 <clearance class="5" value="0.2"/>
 </class>
 <class number="6" name="motor" width="0.8" drill="1">
@@ -5974,6 +5974,34 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-71.12" y1="-15.24" x2="-63.5" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-66.04" y="-15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="S2" gate="B" pin="S"/>
+<wire x1="-101.6" y1="-91.44" x2="-99.06" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-91.44" x2="-99.06" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-86.36" x2="-88.9" y2="-86.36" width="0.1524" layer="91"/>
+<pinref part="S2" gate="A" pin="S"/>
+<wire x1="-99.06" y1="-86.36" x2="-99.06" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="-81.28" x2="-101.6" y2="-81.28" width="0.1524" layer="91"/>
+<junction x="-99.06" y="-86.36"/>
+<label x="-93.98" y="-86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="A1" pin="VI"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="62.56" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="62.56" y1="-20.94" x2="62.56" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="62.56" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
+<label x="60.96" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="A1" pin="VI"/>
+<wire x1="106.68" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="110.82" y1="-20.94" x2="110.82" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="110.82" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="111.76" y="-17.78"/>
+<label x="104.14" y="-17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="M1ACS_OUT" class="0">
 <segment>
@@ -6041,36 +6069,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="133.68" y1="-20.94" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="133.68" y1="-17.78" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
 <label x="134.62" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VCKT" class="5">
-<segment>
-<pinref part="IC1" gate="A1" pin="VI"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="62.56" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="62.56" y1="-20.94" x2="62.56" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="62.56" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
-<label x="60.96" y="-17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="A1" pin="VI"/>
-<wire x1="106.68" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="110.82" y1="-20.94" x2="110.82" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="110.82" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="111.76" y="-17.78"/>
-<label x="104.14" y="-17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="S2" gate="B" pin="S"/>
-<wire x1="-101.6" y1="-91.44" x2="-99.06" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-91.44" x2="-99.06" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-86.36" x2="-88.9" y2="-86.36" width="0.1524" layer="91"/>
-<pinref part="S2" gate="A" pin="S"/>
-<wire x1="-99.06" y1="-86.36" x2="-99.06" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-81.28" x2="-101.6" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="-99.06" y="-86.36"/>
-<label x="-93.98" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="INPUT" class="5">

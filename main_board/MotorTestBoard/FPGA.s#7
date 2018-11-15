@@ -4763,16 +4763,26 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="signal1" width="0.3" drill="0.4">
+<clearance class="0" value="0.2"/>
 </class>
 <class number="1" name="5v" width="0.4" drill="0.4">
-<clearance class="1" value="0.1524"/>
+<clearance class="1" value="0.2"/>
+</class>
+<class number="2" name="18V" width="1.2" drill="1.3">
+<clearance class="2" value="0.2"/>
 </class>
 <class number="3" name="signal" width="0.3" drill="0.4">
-<clearance class="3" value="0.1524"/>
+<clearance class="3" value="0.2"/>
 </class>
 <class number="4" name="gnd" width="1.4" drill="0.4">
-<clearance class="4" value="0.1524"/>
+<clearance class="4" value="0.2"/>
+</class>
+<class number="5" name="VCKT" width="3.5" drill="4">
+<clearance class="5" value="0.2"/>
+</class>
+<class number="6" name="motor" width="0.8" drill="1">
+<clearance class="6" value="0.2"/>
 </class>
 </classes>
 <parts>
@@ -4961,7 +4971,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="M11A" class="0">
+<net name="M11A" class="3">
 <segment>
 <pinref part="X1" gate="-3" pin="S"/>
 <wire x1="53.34" y1="60.96" x2="43.18" y2="60.96" width="0.1524" layer="91"/>
@@ -4973,7 +4983,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-66.04" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M11B" class="0">
+<net name="M11B" class="3">
 <segment>
 <pinref part="X1" gate="-5" pin="S"/>
 <wire x1="53.34" y1="58.42" x2="43.18" y2="58.42" width="0.1524" layer="91"/>
@@ -5525,7 +5535,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="5V" class="1">
 <segment>
 <pinref part="SV1" gate="1" pin="5"/>
 <wire x1="10.16" y1="76.2" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
@@ -5596,7 +5606,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="91.44" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="4">
 <segment>
 <pinref part="SV1" gate="1" pin="4"/>
 <wire x1="10.16" y1="73.66" x2="2.54" y2="73.66" width="0.1524" layer="91"/>
@@ -5724,6 +5734,34 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="33.02" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
 <label x="33.02" y="-12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X1" gate="-1" pin="S"/>
+<wire x1="53.34" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="63.5" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X_1" gate="G$1" pin="0"/>
+<label x="48.26" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-39" pin="S"/>
+<wire x1="53.34" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="15.24" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="X_3" gate="G$1" pin="0"/>
+<label x="45.72" y="12.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-2" pin="S"/>
+<wire x1="187.96" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="63.5" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X_2" gate="G$1" pin="0"/>
+<label x="182.88" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-40" pin="S"/>
+<wire x1="187.96" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="15.24" x2="182.88" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="X_4" gate="G$1" pin="0"/>
+<label x="182.88" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="M21" class="0">
 <segment>
@@ -5776,7 +5814,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M31" class="0">
+<net name="M31" class="6">
 <segment>
 <pinref part="SV3" gate="1" pin="8"/>
 <wire x1="10.16" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
@@ -5793,7 +5831,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M32" class="0">
+<net name="M32" class="6">
 <segment>
 <pinref part="SV3" gate="1" pin="7"/>
 <wire x1="10.16" y1="17.78" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
@@ -5878,7 +5916,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M33" class="0">
+<net name="M33" class="6">
 <segment>
 <pinref part="SV3" gate="1" pin="6"/>
 <wire x1="10.16" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91"/>
@@ -5895,7 +5933,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="18V" class="0">
+<net name="18V" class="2">
 <segment>
 <pinref part="SV8" gate="1" pin="10"/>
 <wire x1="-71.12" y1="86.36" x2="-63.5" y2="86.36" width="0.1524" layer="91"/>
@@ -5965,7 +6003,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-38.1" y="-15.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
 <pinref part="U1" gate="G$1" pin="OUT@1"/>
@@ -5985,7 +6023,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="33.02" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="5VI" class="0">
+<net name="5VI" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
 <wire x1="85.42" y1="-71.74" x2="80.34" y2="-71.74" width="0.1524" layer="91"/>
@@ -6005,7 +6043,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="134.62" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VCKT" class="0">
+<net name="VCKT" class="5">
 <segment>
 <pinref part="IC1" gate="A1" pin="VI"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -6035,33 +6073,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="-93.98" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="0" class="0">
-<segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="53.34" y1="63.5" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="63.5" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X_1" gate="G$1" pin="0"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="187.96" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="63.5" x2="182.88" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="X_2" gate="G$1" pin="0"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-39" pin="S"/>
-<wire x1="53.34" y1="15.24" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="15.24" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="X_3" gate="G$1" pin="0"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-40" pin="S"/>
-<wire x1="187.96" y1="15.24" x2="182.88" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="15.24" x2="182.88" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="X_4" gate="G$1" pin="0"/>
-</segment>
-</net>
-<net name="INPUT" class="0">
+<net name="INPUT" class="5">
 <segment>
 <wire x1="-101.6" y1="-48.26" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-48.26" x2="-127" y2="-48.26" width="0.1524" layer="91"/>
@@ -6077,7 +6089,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-101.6" y1="-43.18" x2="-101.6" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="N$25" class="5">
 <segment>
 <pinref part="U3" gate="A" pin="K"/>
 <wire x1="-124.46" y1="-66.04" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>

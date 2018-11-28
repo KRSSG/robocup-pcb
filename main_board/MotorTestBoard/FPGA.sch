@@ -11757,7 +11757,7 @@ Source: www.kingbright.com</description>
 <label x="-101.6" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M11" class="0">
+<net name="M11" class="6">
 <segment>
 <pinref part="SV1" gate="1" pin="8"/>
 <wire x1="10.16" y1="83.82" x2="2.54" y2="83.82" width="0.1524" layer="91"/>
@@ -11774,7 +11774,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M13" class="0">
+<net name="M13" class="6">
 <segment>
 <pinref part="SV1" gate="1" pin="6"/>
 <wire x1="10.16" y1="78.74" x2="2.54" y2="78.74" width="0.1524" layer="91"/>
@@ -12085,7 +12085,7 @@ Source: www.kingbright.com</description>
 <label x="-337.82" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M21" class="0">
+<net name="M21" class="6">
 <segment>
 <pinref part="SV2" gate="1" pin="8"/>
 <wire x1="10.16" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91"/>
@@ -12102,7 +12102,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M22" class="0">
+<net name="M22" class="6">
 <segment>
 <pinref part="SV2" gate="1" pin="7"/>
 <wire x1="10.16" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91"/>
@@ -12119,7 +12119,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M23" class="0">
+<net name="M23" class="6">
 <segment>
 <pinref part="SV2" gate="1" pin="6"/>
 <wire x1="10.16" y1="45.72" x2="2.54" y2="45.72" width="0.1524" layer="91"/>
@@ -12170,7 +12170,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M41" class="0">
+<net name="M41" class="6">
 <segment>
 <pinref part="SV4" gate="1" pin="8"/>
 <wire x1="10.16" y1="-12.7" x2="2.54" y2="-12.7" width="0.1524" layer="91"/>
@@ -12187,7 +12187,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="-20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M42" class="0">
+<net name="M42" class="6">
 <segment>
 <pinref part="SV4" gate="1" pin="7"/>
 <wire x1="10.16" y1="-15.24" x2="2.54" y2="-15.24" width="0.1524" layer="91"/>
@@ -12204,7 +12204,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M43" class="0">
+<net name="M43" class="6">
 <segment>
 <pinref part="SV4" gate="1" pin="6"/>
 <wire x1="10.16" y1="-17.78" x2="2.54" y2="-17.78" width="0.1524" layer="91"/>
@@ -12221,7 +12221,7 @@ Source: www.kingbright.com</description>
 <label x="-38.1" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="M12" class="0">
+<net name="M12" class="6">
 <segment>
 <pinref part="SV1" gate="1" pin="7"/>
 <wire x1="10.16" y1="81.28" x2="2.54" y2="81.28" width="0.1524" layer="91"/>
@@ -12449,7 +12449,7 @@ Source: www.kingbright.com</description>
 <label x="187.96" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IR3" class="4">
+<net name="IR3" class="3">
 <segment>
 <pinref part="SV5" gate="1" pin="5"/>
 <wire x1="228.6" y1="33.02" x2="236.22" y2="33.02" width="0.1524" layer="91"/>
@@ -12503,7 +12503,7 @@ Source: www.kingbright.com</description>
 <wire x1="-30.48" y1="-172.72" x2="-35.56" y2="-172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="5V1" class="0">
+<net name="5V1" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="5V"/>
 <wire x1="2.54" y1="-132.08" x2="10.16" y2="-132.08" width="0.1524" layer="91"/>
@@ -12624,7 +12624,7 @@ Source: www.kingbright.com</description>
 <label x="-40.64" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MD1" class="0">
+<net name="MD1" class="6">
 <segment>
 <pinref part="SV17" gate="1" pin="7"/>
 <wire x1="-40.64" y1="147.32" x2="-33.02" y2="147.32" width="0.1524" layer="91"/>
@@ -12641,7 +12641,7 @@ Source: www.kingbright.com</description>
 <label x="2.54" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MD2" class="0">
+<net name="MD2" class="6">
 <segment>
 <pinref part="SV17" gate="1" pin="5"/>
 <wire x1="-40.64" y1="142.24" x2="-33.02" y2="142.24" width="0.1524" layer="91"/>
@@ -12658,7 +12658,7 @@ Source: www.kingbright.com</description>
 <label x="2.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MD3" class="0">
+<net name="MD3" class="6">
 <segment>
 <pinref part="SV17" gate="1" pin="3"/>
 <wire x1="-40.64" y1="137.16" x2="-33.02" y2="137.16" width="0.1524" layer="91"/>
@@ -12711,7 +12711,7 @@ Source: www.kingbright.com</description>
 <label x="68.58" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="12V" class="0">
+<net name="12V" class="2">
 <segment>
 <pinref part="U$4" gate="G$1" pin="VOUT"/>
 <wire x1="-160.02" y1="-119.38" x2="-147.32" y2="-119.38" width="0.1524" layer="91"/>
@@ -12750,7 +12750,7 @@ Source: www.kingbright.com</description>
 <label x="-375.92" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="SUPP" class="5">
 <segment>
 <pinref part="J5" gate="G$1" pin="+"/>
 <pinref part="U$5" gate="G$1" pin="P"/>

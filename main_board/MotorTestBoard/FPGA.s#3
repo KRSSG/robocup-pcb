@@ -4840,6 +4840,103 @@ Siemens, distributor Buerklin, 11G766</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BUCK">
+<packages>
+<package name="BUCK">
+<pad name="GND" x="0" y="0" drill="1.016" diameter="1.778" shape="octagon"/>
+<pad name="VIN" x="0" y="17.5" drill="1.016" diameter="1.778" shape="octagon"/>
+<pad name="VOUT" x="39" y="17.5" drill="1.016" diameter="1.778" shape="octagon"/>
+<pad name="GNDO" x="39" y="0" drill="1.016" diameter="1.778" shape="octagon"/>
+<wire x1="-3.8" y1="20" x2="-3.8" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-3.8" y1="-2.6" x2="43.3" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="43.3" y1="-2.6" x2="43.3" y2="20" width="0.127" layer="21"/>
+<wire x1="43.3" y1="20" x2="-3.8" y2="20" width="0.127" layer="21"/>
+<circle x="-2.4" y="18.6" radius="0.565684375" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BUCK">
+<wire x1="-25.4" y1="12.7" x2="-25.4" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="-25.4" y2="12.7" width="0.254" layer="94"/>
+<pin name="VIN" x="-30.48" y="10.16" length="middle"/>
+<pin name="GND" x="-30.48" y="7.62" length="middle"/>
+<pin name="VOUT" x="0" y="10.16" length="middle" rot="R180"/>
+<pin name="GNDO" x="0" y="7.62" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BUCK">
+<gates>
+<gate name="G$1" symbol="BUCK" x="-7.62" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="BUCK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDO" pad="GNDO"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+<connect gate="G$1" pin="VOUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="switch_DA10">
+<packages>
+<package name="DA10">
+<wire x1="-10.030459375" y1="6.5024" x2="9.1821" y2="6.5024" width="0.127" layer="21"/>
+<wire x1="9.1821" y1="6.5024" x2="9.1821" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="9.1821" y1="-6.5024" x2="-10.030459375" y2="-6.5024" width="0.127" layer="21"/>
+<wire x1="-10.030459375" y1="-6.5024" x2="-10.030459375" y2="6.5024" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="5.08" diameter="5.334" shape="long" rot="R90"/>
+<pad name="P$2" x="-7.0485" y="0" drill="5.08" diameter="5.334" shape="long" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SWOTCHDA10">
+<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-5.08" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.905" x2="-5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-4.445" y2="0" width="0.1524" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<text x="-6.985" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-4.445" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SWITCH_DA10" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="SWOTCHDA10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DA10">
+<connects>
+<connect gate="G$1" pin="P" pad="P$2"/>
+<connect gate="G$1" pin="S" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4910,11 +5007,15 @@ Siemens, distributor Buerklin, 11G766</description>
 <part name="SV14" library="con-lstb" deviceset="MA10-1" device=""/>
 <part name="SV17" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="SV18" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="U1" library="LP38690DT-3.3" deviceset="LP38690DT-3.3" device=""/>
+<part name="U2" library="LP38690DT-3.3" deviceset="LP38690DT-3.3" device=""/>
+<part name="U$4" library="BUCK" deviceset="BUCK" device=""/>
+<part name="U$5" library="switch_DA10" deviceset="SWITCH_DA10" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-99.06" y="-68.58" size="3.81" layer="94" ratio="31">POWER SUPPLY</text>
+<text x="-147.32" y="-111.76" size="3.81" layer="94" ratio="31">POWER SUPPLY</text>
 </plain>
 <instances>
 <instance part="SV1" gate="1" x="-5.08" y="73.66"/>
@@ -4939,24 +5040,28 @@ Siemens, distributor Buerklin, 11G766</description>
 <instance part="C3" gate="G$1" x="90.5" y="-23.48"/>
 <instance part="C4" gate="G$1" x="110.82" y="-23.48"/>
 <instance part="C5" gate="G$1" x="133.68" y="-23.48"/>
-<instance part="GND12" gate="1" x="-124.46" y="-86.36" rot="MR0"/>
-<instance part="S2" gate="B" x="-106.68" y="-88.9" rot="R270"/>
-<instance part="S2" gate="A" x="-106.68" y="-76.2" rot="R270"/>
-<instance part="J5" gate="G$1" x="-142.24" y="-81.28"/>
+<instance part="GND12" gate="1" x="-200.66" y="-78.74" rot="MR0"/>
+<instance part="S2" gate="B" x="-154.94" y="-132.08" rot="R270"/>
+<instance part="S2" gate="A" x="-154.94" y="-119.38" rot="R270"/>
+<instance part="J5" gate="G$1" x="-198.12" y="-68.58" rot="R270"/>
 <instance part="X_1" gate="G$1" x="45.72" y="68.58" rot="R180"/>
 <instance part="X_2" gate="G$1" x="182.88" y="68.58" rot="R180"/>
 <instance part="X_3" gate="G$1" x="45.72" y="7.62"/>
 <instance part="X_4" gate="G$1" x="182.88" y="7.62"/>
-<instance part="U3" gate="A" x="-124.46" y="-60.96" rot="R270"/>
+<instance part="U3" gate="A" x="-167.64" y="-104.14" rot="R270"/>
 <instance part="JP1" gate="A" x="58.42" y="40.64"/>
 <instance part="JP2" gate="A" x="170.18" y="40.64"/>
 <instance part="U$1" gate="G$1" x="0" y="-154.94"/>
 <instance part="GND1" gate="1" x="16.54" y="-147.78" rot="MR0"/>
 <instance part="GND2" gate="1" x="-47.16" y="-169.18" rot="MR0"/>
 <instance part="SV5" gate="1" x="220.98" y="35.56" rot="MR180"/>
-<instance part="SV14" gate="1" x="-78.74" y="127"/>
-<instance part="SV17" gate="1" x="-45.72" y="129.54"/>
-<instance part="SV18" gate="1" x="-7.62" y="132.08"/>
+<instance part="SV14" gate="1" x="-81.28" y="139.7"/>
+<instance part="SV17" gate="1" x="-48.26" y="139.7"/>
+<instance part="SV18" gate="1" x="-10.16" y="139.7"/>
+<instance part="U1" gate="A" x="-198.12" y="-104.14" rot="R270"/>
+<instance part="U2" gate="A" x="-182.88" y="-104.14" rot="R270"/>
+<instance part="U$4" gate="G$1" x="-104.14" y="-160.02"/>
+<instance part="U$5" gate="G$1" x="-180.34" y="-71.12" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5595,26 +5700,6 @@ Siemens, distributor Buerklin, 11G766</description>
 <label x="7.62" y="-20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV7" gate="1" pin="1"/>
-<wire x1="-38.1" y1="66.04" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
-<label x="-38.1" y="66.04" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV11" gate="1" pin="1"/>
-<wire x1="-38.1" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
-<label x="-38.1" y="33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV15" gate="1" pin="1"/>
-<wire x1="-38.1" y1="0" x2="-30.48" y2="0" width="0.1524" layer="91"/>
-<label x="-38.1" y="0" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV9" gate="1" pin="1"/>
-<wire x1="-38.1" y1="-33.02" x2="-30.48" y2="-33.02" width="0.1524" layer="91"/>
-<label x="-38.1" y="-33.02" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="-104.14" y1="83.82" x2="-101.6" y2="83.82" width="0.1524" layer="91"/>
 <label x="-101.6" y="83.82" size="1.778" layer="95"/>
@@ -5642,6 +5727,16 @@ Siemens, distributor Buerklin, 11G766</description>
 <wire x1="90.5" y1="-20.94" x2="90.5" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="90.5" y1="-17.78" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
 <label x="91.44" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV17" gate="1" pin="1"/>
+<wire x1="-40.64" y1="132.08" x2="-33.02" y2="132.08" width="0.1524" layer="91"/>
+<label x="-40.64" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV18" gate="1" pin="5"/>
+<wire x1="-2.54" y1="142.24" x2="5.08" y2="142.24" width="0.1524" layer="91"/>
+<label x="2.54" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="4">
@@ -5750,9 +5845,9 @@ Siemens, distributor Buerklin, 11G766</description>
 <label x="119.38" y="-33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-137.16" y1="-83.82" x2="-124.46" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="-73.66" x2="-200.66" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<junction x="-124.46" y="-83.82"/>
+<junction x="-200.66" y="-76.2"/>
 <pinref part="J5" gate="G$1" pin="-"/>
 </segment>
 <segment>
@@ -5819,6 +5914,29 @@ Siemens, distributor Buerklin, 11G766</description>
 <pinref part="SV5" gate="1" pin="8"/>
 <wire x1="228.6" y1="25.4" x2="236.22" y2="25.4" width="0.1524" layer="91"/>
 <label x="236.22" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV14" gate="1" pin="2"/>
+<wire x1="-73.66" y1="132.08" x2="-66.04" y2="132.08" width="0.1524" layer="91"/>
+<label x="-71.12" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV14" gate="1" pin="1"/>
+<wire x1="-73.66" y1="129.54" x2="-66.04" y2="129.54" width="0.1524" layer="91"/>
+<label x="-71.12" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV18" gate="1" pin="4"/>
+<wire x1="-2.54" y1="139.7" x2="5.08" y2="139.7" width="0.1524" layer="91"/>
+<label x="2.54" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="-134.62" y1="-152.4" x2="-134.62" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="GNDO"/>
+<wire x1="-134.62" y1="-162.56" x2="-104.14" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-162.56" x2="-104.14" y2="-152.4" width="0.1524" layer="91"/>
+<label x="-132.08" y="-162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="M21" class="0">
@@ -6034,31 +6152,19 @@ Siemens, distributor Buerklin, 11G766</description>
 </segment>
 <segment>
 <pinref part="S2" gate="B" pin="S"/>
-<wire x1="-101.6" y1="-91.44" x2="-99.06" y2="-91.44" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-91.44" x2="-99.06" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-86.36" x2="-88.9" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-134.62" x2="-147.32" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-134.62" x2="-147.32" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-129.54" x2="-137.16" y2="-129.54" width="0.1524" layer="91"/>
 <pinref part="S2" gate="A" pin="S"/>
-<wire x1="-99.06" y1="-86.36" x2="-99.06" y2="-81.28" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="-81.28" x2="-101.6" y2="-81.28" width="0.1524" layer="91"/>
-<junction x="-99.06" y="-86.36"/>
-<label x="-93.98" y="-86.36" size="1.778" layer="95"/>
+<wire x1="-147.32" y1="-129.54" x2="-147.32" y2="-124.46" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-124.46" x2="-149.86" y2="-124.46" width="0.1524" layer="91"/>
+<junction x="-147.32" y="-129.54"/>
+<label x="-142.24" y="-129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A1" pin="VI"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="62.56" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="62.56" y1="-20.94" x2="62.56" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="62.56" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
-<label x="60.96" y="-17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="A1" pin="VI"/>
-<wire x1="106.68" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="110.82" y1="-20.94" x2="110.82" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="110.82" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="111.76" y="-17.78"/>
-<label x="104.14" y="-17.78" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
+<wire x1="-134.62" y1="-149.86" x2="-147.32" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-147.32" y="-149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="M1ACS_OUT" class="0">
@@ -6091,32 +6197,46 @@ Siemens, distributor Buerklin, 11G766</description>
 </net>
 <net name="INPUT" class="5">
 <segment>
-<wire x1="-101.6" y1="-48.26" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="-121.92" y1="-48.26" x2="-127" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="~A"/>
-<wire x1="-127" y1="-55.88" x2="-127" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="A"/>
-<wire x1="-121.92" y1="-55.88" x2="-121.92" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="-121.92" y="-48.26"/>
-<pinref part="J5" gate="G$1" pin="+"/>
-<wire x1="-137.16" y1="-78.74" x2="-132.08" y2="-78.74" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="-78.74" x2="-132.08" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="-43.18" x2="-101.6" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-43.18" x2="-101.6" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="-99.06" x2="-170.18" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="A"/>
+<wire x1="-180.34" y1="-99.06" x2="-180.34" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-88.9" x2="-185.42" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="~A"/>
+<pinref part="U1" gate="A" pin="~A"/>
+<wire x1="-200.66" y1="-99.06" x2="-200.66" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-200.66" y1="-88.9" x2="-195.58" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="A"/>
+<wire x1="-195.58" y1="-99.06" x2="-195.58" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="-195.58" y="-99.06"/>
+<junction x="-195.58" y="-88.9"/>
+<wire x1="-185.42" y1="-99.06" x2="-185.42" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="-88.9" x2="-195.58" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="-185.42" y="-99.06"/>
+<wire x1="-170.18" y1="-88.9" x2="-180.34" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="-180.34" y="-88.9"/>
+<wire x1="-165.1" y1="-99.06" x2="-165.1" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="-88.9" x2="-170.18" y2="-88.9" width="0.1524" layer="91"/>
+<junction x="-170.18" y="-88.9"/>
+<pinref part="U$5" gate="G$1" pin="S"/>
+<wire x1="-175.26" y1="-71.12" x2="-175.26" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-175.26" y1="-83.82" x2="-195.58" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-195.58" y1="-83.82" x2="-195.58" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="7">
 <segment>
 <pinref part="U3" gate="A" pin="K"/>
-<wire x1="-124.46" y1="-66.04" x2="-109.22" y2="-66.04" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="-66.04" x2="-109.22" y2="-76.2" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="-76.2" x2="-116.84" y2="-76.2" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="-109.22" x2="-157.48" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="-109.22" x2="-157.48" y2="-119.38" width="0.1524" layer="91"/>
+<wire x1="-157.48" y1="-119.38" x2="-165.1" y2="-119.38" width="0.1524" layer="91"/>
 <pinref part="S2" gate="B" pin="P"/>
 <pinref part="S2" gate="A" pin="P"/>
-<wire x1="-111.76" y1="-78.74" x2="-111.76" y2="-88.9" width="0.1524" layer="91"/>
-<wire x1="-116.84" y1="-78.74" x2="-111.76" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="-111.76" y="-78.74"/>
-<wire x1="-116.84" y1="-76.2" x2="-116.84" y2="-78.74" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-121.92" x2="-160.02" y2="-132.08" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="-121.92" x2="-160.02" y2="-121.92" width="0.1524" layer="91"/>
+<junction x="-160.02" y="-121.92"/>
+<wire x1="-165.1" y1="-119.38" x2="-165.1" y2="-121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CHARGE" class="0">
@@ -6259,6 +6379,235 @@ Siemens, distributor Buerklin, 11G766</description>
 <wire x1="133.68" y1="-20.94" x2="133.68" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="133.68" y1="-17.78" x2="134.62" y2="-17.78" width="0.1524" layer="91"/>
 <label x="134.62" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV7" gate="1" pin="1"/>
+<wire x1="-38.1" y1="66.04" x2="-30.48" y2="66.04" width="0.1524" layer="91"/>
+<label x="-38.1" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV11" gate="1" pin="1"/>
+<wire x1="-38.1" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+<label x="-38.1" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV15" gate="1" pin="1"/>
+<wire x1="-38.1" y1="0" x2="-30.48" y2="0" width="0.1524" layer="91"/>
+<label x="-38.1" y="0" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV9" gate="1" pin="1"/>
+<wire x1="-38.1" y1="-33.02" x2="-30.48" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-38.1" y="-33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD1A" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="8"/>
+<wire x1="-73.66" y1="147.32" x2="-66.04" y2="147.32" width="0.1524" layer="91"/>
+<label x="-71.12" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="15"/>
+<wire x1="55.88" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+<label x="43.18" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD1B" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="7"/>
+<wire x1="-73.66" y1="144.78" x2="-66.04" y2="144.78" width="0.1524" layer="91"/>
+<label x="-71.12" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="17"/>
+<wire x1="55.88" y1="43.18" x2="43.18" y2="43.18" width="0.1524" layer="91"/>
+<label x="43.18" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD2A" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="6"/>
+<wire x1="-73.66" y1="142.24" x2="-66.04" y2="142.24" width="0.1524" layer="91"/>
+<label x="-71.12" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="19"/>
+<wire x1="55.88" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="40.64" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
+<label x="43.18" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD2B" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="5"/>
+<wire x1="-73.66" y1="139.7" x2="-66.04" y2="139.7" width="0.1524" layer="91"/>
+<label x="-71.12" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="21"/>
+<wire x1="55.88" y1="38.1" x2="43.18" y2="38.1" width="0.1524" layer="91"/>
+<label x="43.18" y="38.1" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD3A" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="4"/>
+<wire x1="-73.66" y1="137.16" x2="-66.04" y2="137.16" width="0.1524" layer="91"/>
+<label x="-71.12" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="23"/>
+<wire x1="55.88" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
+<label x="43.18" y="35.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD3B" class="0">
+<segment>
+<pinref part="SV14" gate="1" pin="3"/>
+<wire x1="-73.66" y1="134.62" x2="-66.04" y2="134.62" width="0.1524" layer="91"/>
+<label x="-71.12" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="25"/>
+<wire x1="55.88" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<label x="43.18" y="33.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MDACS_OUT" class="0">
+<segment>
+<pinref part="SV17" gate="1" pin="8"/>
+<wire x1="-40.64" y1="149.86" x2="-33.02" y2="149.86" width="0.1524" layer="91"/>
+<label x="-40.64" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD1" class="0">
+<segment>
+<pinref part="SV17" gate="1" pin="7"/>
+<wire x1="-40.64" y1="147.32" x2="-33.02" y2="147.32" width="0.1524" layer="91"/>
+<label x="-40.64" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV17" gate="1" pin="6"/>
+<wire x1="-40.64" y1="144.78" x2="-33.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="-38.1" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV18" gate="1" pin="8"/>
+<wire x1="-2.54" y1="149.86" x2="5.08" y2="149.86" width="0.1524" layer="91"/>
+<label x="2.54" y="149.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD2" class="0">
+<segment>
+<pinref part="SV17" gate="1" pin="5"/>
+<wire x1="-40.64" y1="142.24" x2="-33.02" y2="142.24" width="0.1524" layer="91"/>
+<label x="-40.64" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV17" gate="1" pin="4"/>
+<wire x1="-40.64" y1="139.7" x2="-33.02" y2="139.7" width="0.1524" layer="91"/>
+<label x="-38.1" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV18" gate="1" pin="7"/>
+<wire x1="-2.54" y1="147.32" x2="5.08" y2="147.32" width="0.1524" layer="91"/>
+<label x="2.54" y="147.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MD3" class="0">
+<segment>
+<pinref part="SV17" gate="1" pin="3"/>
+<wire x1="-40.64" y1="137.16" x2="-33.02" y2="137.16" width="0.1524" layer="91"/>
+<label x="-40.64" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV17" gate="1" pin="2"/>
+<wire x1="-40.64" y1="134.62" x2="-33.02" y2="134.62" width="0.1524" layer="91"/>
+<label x="-38.1" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV18" gate="1" pin="6"/>
+<wire x1="-2.54" y1="144.78" x2="5.08" y2="144.78" width="0.1524" layer="91"/>
+<label x="2.54" y="144.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MDH1" class="0">
+<segment>
+<pinref part="SV18" gate="1" pin="3"/>
+<wire x1="-2.54" y1="137.16" x2="5.08" y2="137.16" width="0.1524" layer="91"/>
+<label x="2.54" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="16"/>
+<wire x1="63.5" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
+<label x="68.58" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MDH2" class="0">
+<segment>
+<pinref part="SV18" gate="1" pin="2"/>
+<wire x1="-2.54" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
+<label x="2.54" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="18"/>
+<wire x1="63.5" y1="43.18" x2="76.2" y2="43.18" width="0.1524" layer="91"/>
+<label x="68.58" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MDH3" class="0">
+<segment>
+<pinref part="SV18" gate="1" pin="1"/>
+<wire x1="-2.54" y1="132.08" x2="5.08" y2="132.08" width="0.1524" layer="91"/>
+<label x="2.54" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="20"/>
+<wire x1="63.5" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
+<label x="68.58" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="12V" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="VOUT"/>
+<wire x1="-104.14" y1="-149.86" x2="-91.44" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-96.52" y="-149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV14" gate="1" pin="10"/>
+<wire x1="-73.66" y1="152.4" x2="-66.04" y2="152.4" width="0.1524" layer="91"/>
+<label x="-71.12" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV14" gate="1" pin="9"/>
+<wire x1="-73.66" y1="149.86" x2="-66.04" y2="149.86" width="0.1524" layer="91"/>
+<label x="-71.12" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="A1" pin="VI"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="62.56" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="62.56" y1="-20.94" x2="62.56" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="62.56" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
+<label x="60.96" y="-17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="A1" pin="VI"/>
+<wire x1="106.68" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="110.82" y1="-20.94" x2="110.82" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="110.82" y1="-17.78" x2="111.76" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="111.76" y="-17.78"/>
+<label x="104.14" y="-17.78" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="J5" gate="G$1" pin="+"/>
+<pinref part="U$5" gate="G$1" pin="P"/>
+<wire x1="-195.58" y1="-73.66" x2="-185.42" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="-73.66" x2="-185.42" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

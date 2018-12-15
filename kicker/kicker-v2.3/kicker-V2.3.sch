@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -11457,6 +11458,18 @@ W = angled&lt;p&gt;
 <wire x1="-184.15" y1="-15.24" x2="-177.8" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-184.15" y="-15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VCC"/>
+<wire x1="110.49" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="48.26" x2="114.3" y2="54.61" width="0.1524" layer="91"/>
+<label x="114.3" y="54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="VCC"/>
+<wire x1="237.49" y1="48.26" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="48.26" x2="241.3" y2="54.61" width="0.1524" layer="91"/>
+<label x="241.3" y="54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="CHARGE" class="0">
 <segment>
@@ -11568,20 +11581,6 @@ W = angled&lt;p&gt;
 <pinref part="SV3" gate="1" pin="5"/>
 <wire x1="129.54" y1="-91.44" x2="142.24" y2="-91.44" width="0.1524" layer="91"/>
 <label x="139.7" y="-91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VTRANS" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="VCC"/>
-<wire x1="110.49" y1="48.26" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="48.26" x2="114.3" y2="54.61" width="0.1524" layer="91"/>
-<label x="114.3" y="54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="VCC"/>
-<wire x1="237.49" y1="48.26" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="48.26" x2="241.3" y2="54.61" width="0.1524" layer="91"/>
-<label x="241.3" y="54.61" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="SOLENOID" class="0">

@@ -5052,6 +5052,154 @@ XT-60 Power Connector
 </deviceset>
 </devicesets>
 </library>
+<library name="nodeMCU">
+<packages>
+<package name="NODEMCU32">
+<pad name="P$1" x="0" y="0" drill="0.8" shape="long"/>
+<pad name="P$2" x="0" y="-2.54" drill="0.8" shape="long"/>
+<pad name="P$3" x="0" y="-5.08" drill="0.8" shape="long"/>
+<pad name="P$4" x="0" y="-7.62" drill="0.8" shape="long"/>
+<pad name="P$5" x="0" y="-10.16" drill="0.8" shape="long"/>
+<pad name="P$6" x="0" y="-12.7" drill="0.8" shape="long"/>
+<pad name="P$7" x="0" y="-15.24" drill="0.8" shape="long"/>
+<pad name="P$8" x="0" y="-17.78" drill="0.8" shape="long"/>
+<pad name="P$9" x="0" y="-20.32" drill="0.8" shape="long"/>
+<pad name="P$10" x="0" y="-22.86" drill="0.8" shape="long"/>
+<pad name="P$11" x="0" y="-25.4" drill="0.8" shape="long"/>
+<pad name="P$12" x="0" y="-27.94" drill="0.8" shape="long"/>
+<pad name="P$13" x="0" y="-30.48" drill="0.8" shape="long"/>
+<pad name="P$14" x="0" y="-33.02" drill="0.8" shape="long"/>
+<pad name="P$15" x="0" y="-35.56" drill="0.8" shape="long"/>
+<pad name="P$16" x="0" y="-38.1" drill="0.8" shape="long"/>
+<pad name="P$17" x="0" y="-40.64" drill="0.8" shape="long"/>
+<pad name="P$18" x="0" y="-43.18" drill="0.8" shape="long"/>
+<pad name="P$19" x="0" y="-45.72" drill="0.8" shape="long"/>
+<pad name="P$20" x="22.86" y="0" drill="0.8" shape="long"/>
+<pad name="P$21" x="22.86" y="-2.54" drill="0.8" shape="long"/>
+<pad name="P$22" x="22.86" y="-5.08" drill="0.8" shape="long"/>
+<pad name="P$23" x="22.86" y="-7.62" drill="0.8" shape="long"/>
+<pad name="P$24" x="22.86" y="-10.16" drill="0.8" shape="long"/>
+<pad name="P$25" x="22.86" y="-12.7" drill="0.8" shape="long"/>
+<pad name="P$26" x="22.86" y="-15.24" drill="0.8" shape="long"/>
+<pad name="P$27" x="22.86" y="-17.78" drill="0.8" shape="long"/>
+<pad name="P$28" x="22.86" y="-20.32" drill="0.8" shape="long"/>
+<pad name="P$29" x="22.86" y="-22.86" drill="0.8" shape="long"/>
+<pad name="P$30" x="22.86" y="-25.4" drill="0.8" shape="long"/>
+<pad name="P$31" x="22.86" y="-27.94" drill="0.8" shape="long"/>
+<pad name="P$32" x="22.86" y="-30.48" drill="0.8" shape="long"/>
+<pad name="P$33" x="22.86" y="-33.02" drill="0.8" shape="long"/>
+<pad name="P$34" x="22.86" y="-35.56" drill="0.8" shape="long"/>
+<pad name="P$35" x="22.86" y="-38.1" drill="0.8" shape="long"/>
+<pad name="P$36" x="22.86" y="-40.64" drill="0.8" shape="long"/>
+<pad name="P$37" x="22.86" y="-43.18" drill="0.8" shape="long"/>
+<pad name="P$38" x="22.86" y="-45.72" drill="0.8" shape="long"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-50.8" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-50.8" x2="27.94" y2="-50.8" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-50.8" x2="27.94" y2="7.62" width="0.127" layer="21"/>
+<wire x1="27.94" y1="7.62" x2="-5.08" y2="7.62" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NODEMCU32">
+<pin name="CLK" x="-30.48" y="22.86" length="middle"/>
+<pin name="GND1" x="-30.48" y="-7.62" length="middle"/>
+<pin name="SD0" x="-30.48" y="20.32" length="middle"/>
+<pin name="SD1" x="-30.48" y="17.78" length="middle"/>
+<pin name="P15" x="-30.48" y="15.24" length="middle"/>
+<pin name="P2" x="-30.48" y="12.7" length="middle"/>
+<pin name="P0" x="-30.48" y="10.16" length="middle"/>
+<pin name="P1" x="-30.48" y="7.62" length="middle"/>
+<pin name="P16" x="-30.48" y="5.08" length="middle"/>
+<pin name="P17" x="-30.48" y="2.54" length="middle"/>
+<pin name="P5" x="-30.48" y="0" length="middle"/>
+<pin name="P18" x="-30.48" y="-2.54" length="middle"/>
+<pin name="P19" x="-30.48" y="-5.08" length="middle"/>
+<pin name="P21" x="-30.48" y="-10.16" length="middle"/>
+<pin name="RX" x="-30.48" y="-12.7" length="middle"/>
+<wire x1="-25.4" y1="27.94" x2="-25.4" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-27.94" x2="-2.54" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-27.94" x2="-2.54" y2="27.94" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="27.94" x2="-25.4" y2="27.94" width="0.254" layer="94"/>
+<pin name="P34" x="2.54" y="-12.7" length="middle" rot="R180"/>
+<pin name="P35" x="2.54" y="-10.16" length="middle" rot="R180"/>
+<pin name="P32" x="2.54" y="-7.62" length="middle" rot="R180"/>
+<pin name="P33" x="2.54" y="-5.08" length="middle" rot="R180"/>
+<pin name="P25" x="2.54" y="-2.54" length="middle" rot="R180"/>
+<pin name="P26" x="2.54" y="0" length="middle" rot="R180"/>
+<pin name="P27" x="2.54" y="2.54" length="middle" rot="R180"/>
+<pin name="P14" x="2.54" y="5.08" length="middle" rot="R180"/>
+<pin name="P12" x="2.54" y="7.62" length="middle" rot="R180"/>
+<pin name="GND3" x="2.54" y="10.16" length="middle" rot="R180"/>
+<pin name="P13" x="2.54" y="12.7" length="middle" rot="R180"/>
+<pin name="SD2" x="2.54" y="15.24" length="middle" rot="R180"/>
+<pin name="SD3" x="2.54" y="17.78" length="middle" rot="R180"/>
+<pin name="GND" x="2.54" y="20.32" length="middle" rot="R180"/>
+<pin name="5V" x="2.54" y="22.86" length="middle" rot="R180"/>
+<pin name="TX" x="-30.48" y="-15.24" length="middle"/>
+<pin name="P22" x="-30.48" y="-17.78" length="middle"/>
+<pin name="P23" x="-30.48" y="-20.32" length="middle"/>
+<pin name="GND2" x="-30.48" y="-22.86" length="middle"/>
+<pin name="3V3" x="2.54" y="-22.86" length="middle" rot="R180"/>
+<pin name="SEN" x="2.54" y="-20.32" length="middle" rot="R180"/>
+<pin name="SVP" x="2.54" y="-17.78" length="middle" rot="R180"/>
+<pin name="SVN" x="2.54" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NODEMCU32S">
+<gates>
+<gate name="G$1" symbol="NODEMCU32" x="12.7" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="NODEMCU32">
+<connects>
+<connect gate="G$1" pin="3V3" pad="P$38"/>
+<connect gate="G$1" pin="5V" pad="P$20"/>
+<connect gate="G$1" pin="CLK" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$21"/>
+<connect gate="G$1" pin="GND1" pad="P$13"/>
+<connect gate="G$1" pin="GND2" pad="P$19"/>
+<connect gate="G$1" pin="GND3" pad="P$25"/>
+<connect gate="G$1" pin="P0" pad="P$6"/>
+<connect gate="G$1" pin="P1" pad="P$7"/>
+<connect gate="G$1" pin="P12" pad="P$26"/>
+<connect gate="G$1" pin="P13" pad="P$24"/>
+<connect gate="G$1" pin="P14" pad="P$27"/>
+<connect gate="G$1" pin="P15" pad="P$4"/>
+<connect gate="G$1" pin="P16" pad="P$8"/>
+<connect gate="G$1" pin="P17" pad="P$9"/>
+<connect gate="G$1" pin="P18" pad="P$11"/>
+<connect gate="G$1" pin="P19" pad="P$12"/>
+<connect gate="G$1" pin="P2" pad="P$5"/>
+<connect gate="G$1" pin="P21" pad="P$14"/>
+<connect gate="G$1" pin="P22" pad="P$17"/>
+<connect gate="G$1" pin="P23" pad="P$18"/>
+<connect gate="G$1" pin="P25" pad="P$30"/>
+<connect gate="G$1" pin="P26" pad="P$29"/>
+<connect gate="G$1" pin="P27" pad="P$28"/>
+<connect gate="G$1" pin="P32" pad="P$32"/>
+<connect gate="G$1" pin="P33" pad="P$31"/>
+<connect gate="G$1" pin="P34" pad="P$34"/>
+<connect gate="G$1" pin="P35" pad="P$33"/>
+<connect gate="G$1" pin="P5" pad="P$10"/>
+<connect gate="G$1" pin="RX" pad="P$15"/>
+<connect gate="G$1" pin="SD0" pad="P$2"/>
+<connect gate="G$1" pin="SD1" pad="P$3"/>
+<connect gate="G$1" pin="SD2" pad="P$23"/>
+<connect gate="G$1" pin="SD3" pad="P$22"/>
+<connect gate="G$1" pin="SEN" pad="P$37"/>
+<connect gate="G$1" pin="SVN" pad="P$35"/>
+<connect gate="G$1" pin="SVP" pad="P$36"/>
+<connect gate="G$1" pin="TX" pad="P$16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="BUCK">
 <packages>
 <package name="BUCK">
@@ -11462,6 +11610,9 @@ Source: www.kingbright.com</description>
 <part name="U3" library="LP38690DT-3.3" deviceset="LP38690DT-3.3" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X20" device="" package3d_urn="urn:adsk.eagle:package:22443/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X20" device="" package3d_urn="urn:adsk.eagle:package:22443/2"/>
+<part name="U$1" library="nodeMCU" deviceset="NODEMCU32S" device=""/>
+<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
+<part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="SV5" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="SV14" library="con-lstb" deviceset="MA10-1" device=""/>
 <part name="SV17" library="con-lstb" deviceset="MA08-1" device=""/>
@@ -11525,6 +11676,9 @@ Source: www.kingbright.com</description>
 <instance part="U3" gate="A" x="-228.6" y="-160.02" rot="R270"/>
 <instance part="JP1" gate="A" x="58.42" y="40.64"/>
 <instance part="JP2" gate="A" x="170.18" y="40.64"/>
+<instance part="U$1" gate="G$1" x="0" y="-154.94"/>
+<instance part="GND1" gate="1" x="16.54" y="-147.78" rot="MR0"/>
+<instance part="GND2" gate="1" x="-47.16" y="-169.18" rot="MR0"/>
 <instance part="SV5" gate="1" x="220.98" y="35.56" rot="MR180"/>
 <instance part="SV14" gate="1" x="-81.28" y="139.7"/>
 <instance part="SV17" gate="1" x="-48.26" y="139.7"/>
@@ -12380,6 +12534,31 @@ Source: www.kingbright.com</description>
 <junction x="182.88" y="15.24"/>
 </segment>
 <segment>
+<pinref part="U$1" gate="G$1" pin="GND2"/>
+<wire x1="-30.48" y1="-177.8" x2="-38.1" y2="-177.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND1"/>
+<wire x1="-30.48" y1="-162.56" x2="-38.1" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-162.56" x2="-38.1" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-162.56" x2="-38.1" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-165.1" x2="-45.72" y2="-165.1" width="0.1524" layer="91"/>
+<junction x="-38.1" y="-162.56"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-30.48" y1="-162.56" x2="-47.16" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-47.16" y1="-162.56" x2="-47.16" y2="-166.64" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-162.56"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="2.54" y1="-134.62" x2="10.16" y2="-134.62" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-134.62" x2="10.16" y2="-144.78" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="GND3"/>
+<wire x1="10.16" y1="-144.78" x2="2.54" y2="-144.78" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="2.54" y1="-144.78" x2="16.54" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="16.54" y1="-144.78" x2="16.54" y2="-145.24" width="0.1524" layer="91"/>
+<junction x="2.54" y="-144.78"/>
+</segment>
+<segment>
 <pinref part="SV5" gate="1" pin="8"/>
 <wire x1="228.6" y1="25.4" x2="236.22" y2="25.4" width="0.1524" layer="91"/>
 <label x="236.22" y="25.4" size="1.778" layer="95"/>
@@ -12840,6 +13019,11 @@ Source: www.kingbright.com</description>
 <label x="149.86" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="U$1" gate="G$1" pin="RX"/>
+<wire x1="-30.48" y1="-167.64" x2="-35.56" y2="-167.64" width="0.1524" layer="91"/>
+<label x="-43.18" y="-154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="JP5" gate="A" pin="23"/>
 <pinref part="JP5" gate="A" pin="24"/>
 <wire x1="-63.5" y1="-167.64" x2="-55.88" y2="-167.64" width="0.1524" layer="91"/>
@@ -12853,6 +13037,11 @@ Source: www.kingbright.com</description>
 <pinref part="JP2" gate="A" pin="23"/>
 <wire x1="167.64" y1="35.56" x2="149.86" y2="35.56" width="0.1524" layer="91"/>
 <label x="149.86" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="TX"/>
+<wire x1="-30.48" y1="-170.18" x2="-35.56" y2="-170.18" width="0.1524" layer="91"/>
+<label x="-45.72" y="-182.88" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP5" gate="A" pin="26"/>
@@ -12869,8 +13058,24 @@ Source: www.kingbright.com</description>
 <wire x1="167.64" y1="33.02" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <label x="149.86" y="33.02" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="SEN"/>
+<wire x1="2.54" y1="-175.26" x2="17.78" y2="-175.26" width="0.1524" layer="91"/>
+<label x="12.7" y="-175.26" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P22"/>
+<wire x1="-30.48" y1="-172.72" x2="-35.56" y2="-172.72" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="5V1" class="1">
+<segment>
+<pinref part="U$1" gate="G$1" pin="5V"/>
+<wire x1="2.54" y1="-132.08" x2="10.16" y2="-132.08" width="0.1524" layer="91"/>
+<label x="7.62" y="-132.08" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="IC2" gate="A1" pin="VO"/>
 <wire x1="-129.54" y1="-157.48" x2="-127.94" y2="-157.48" width="0.1524" layer="91"/>
@@ -13204,6 +13409,11 @@ Source: www.kingbright.com</description>
 </net>
 <net name="ESP_REC" class="0">
 <segment>
+<pinref part="U$1" gate="G$1" pin="P35"/>
+<wire x1="2.54" y1="-165.1" x2="20.32" y2="-165.1" width="0.1524" layer="91"/>
+<label x="10.16" y="-165.1" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="-368.3" y1="60.96" x2="-373.38" y2="60.96" width="0.1524" layer="91"/>
 <label x="-378.46" y="60.96" size="1.778" layer="95"/>
@@ -13218,6 +13428,11 @@ Source: www.kingbright.com</description>
 </segment>
 </net>
 <net name="ESP_TRANS" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="P34"/>
+<wire x1="2.54" y1="-167.64" x2="20.32" y2="-167.64" width="0.1524" layer="91"/>
+<label x="10.16" y="-167.64" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="-368.3" y1="68.58" x2="-373.38" y2="68.58" width="0.1524" layer="91"/>
